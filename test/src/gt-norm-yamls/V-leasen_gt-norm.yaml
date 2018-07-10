@@ -1,0 +1,33 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+
+# todo:
+# Proofread the gold standard (below)
+# Then: run analyser, then correct. 
+
+
+  Verb - leasen: # Verb 'to read' - full paradigm
+     leasen+V+Ind+Prs+Sg1: lease
+     leasen+V+Ind+Prs+Sg2: least
+     leasen+V+Ind+Prs+Sg3: least
+     leasen+V+Ind+Prs+Pl: [leaset, leasen]
+
+     leasen+V+Ind+Prt+Sg1: leasde
+     leasen+V+Ind+Prt+Sg2: leasdest
+     leasen+V+Ind+Prt+Sg3: leasde
+     leasen+V+Ind+Prt+Pl: leasden
+
+     leasen+V+Inf:  leasen
+     leasen+V+PrfPrc:  leasd
+     leasen+V+PrsPrc:  leasen
+
+     leasen+V+Imprt+Sg2:  leas
+     leasen+V+Imprt+Pl2:  leaset
