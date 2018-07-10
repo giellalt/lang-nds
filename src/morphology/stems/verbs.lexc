@@ -1,9 +1,14 @@
 !! Verbs
 !  -----
-!! Verbs in UNDEFINED language are actions.
+!! Verbs in LOW GERMAN language are actions.
 
 LEXICON Verbs
-verb    Persons   ;
+
+maken:maak V_MAKEN ;
 tellen:tell V_TELLEN ;
+völen:vööl V_VOELEN ;
+koaken:koak V_KOAKEN ;
+waien:wai V_WAIEN ;
+sakken:sakk V_SAKKEN ;
 
 ! vim: set ft=xfst-lexc:

@@ -11,6 +11,7 @@ Alphabet
 
 !! TRIGGERS
 %^CC2C:0 !!≈ * @CODE@  for Deleting second consonant in orthographic geminate
+%^VV2V:0 !!≈ * @CODE@  for Orthographic vowel deletion in open syllable
 
  %> ;
 
@@ -32,12 +33,30 @@ Rules
 !!€grís00
 
 
-"Deleting second consonant in orthographic geminate l:0"
- l:0 <=> l _ %^CC2C: ;
+"Orthographic vowel deletion in open syllable"
+!! __ @RULENAME@ __
+ Vx:0 <=>      Vx _ Cns %^VV2V: ;
+        where Vx in (a e o u ä ö ü) ;
 
-!! tellen+V+Ind+Prs+Sg2: __count/laskea__
-!!€ tell%^CC2C%>st
-!!€ tel00%>st
+!! maken+V+Ind+Prs+Sg1
+!!€ maak%^VV2V%>e
+!!€ ma0k0%>e
 
-!!$ tell%^CC2C%>st
-!!$ tell0%>st
+!!$ maak%^VV2V%>e
+!!$ maak0%>e
+		
+"Orthographic consonant deletion in closed syllable"
+!! __ @RULENAME@ __
+ Cx:0 <=>      Cx _ %^CC2C: ;
+        where Cx in (b d f g k l m n p r s t v) ;
+
+!! tellen+V+PrfPrc 
+!!€ tell%^CC2C>d
+!!€ tel00%>d
+
+!!$ tell%^CC2C>d
+!!$ tell0%>d
+		
+!"Deleting s before suffix -st"
+!! __ @RULENAME@ __
+! s:0 <=>      _ st ;

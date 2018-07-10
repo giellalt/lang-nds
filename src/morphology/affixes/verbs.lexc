@@ -2,16 +2,6 @@
 !  ---------------
 !! The LOW GERMAN language verbs inflect in persons.
 
-LEXICON Persons
-+V+1sg:en   #   ;
-+V+2sg:et   #   ;
-+V+3sg:e    #   ;
-+V+1pl:ien  #   ;
-+V+2pl:iet  #   ;
-+V+3pl:iet  #   ;
-+V+inf:0    #   ;
-#:0   Nouns   ;
-
 LEXICON V_TELLEN !! tellen:tell
 !!  Orthographic variation in consonant length
 +V+Ind+Prs+Sg1:%>e ENDLEX ;
@@ -29,6 +19,111 @@ LEXICON V_TELLEN !! tellen:tell
 +V+Imprt+Sg2:%^CC2C ENDLEX ;
 +V+Imprt+Pl2:%>et ENDLEX ;
 
+LEXICON V_MAKEN !! maken:maak
+!! Orthographic variation in marking of long vowels, perfect participle '-ed'
+
++V+Ind+Prs+Sg1:%^VV2V%>e ENDLEX ;
++V+Ind+Prs+Sg2:%>st ENDLEX ;
++V+Ind+Prs+Sg3:%>t ENDLEX ;
++V+Ind+Prs+Pl:%^VV2V%>et ENDLEX ;
++V+Ind+Prs+Pl:%^VV2V%>en ENDLEX ;
+
++V+Ind+Prt+Sg1:%>de ENDLEX ;
++V+Ind+Prt+Sg2:%>dest ENDLEX ;
++V+Ind+Prt+Sg3:%>de ENDLEX ;
++V+Ind+Prt+Pl:%>den ENDLEX ;
+
++V+Inf:%^VV2V%>en ENDLEX ;
++V+PrfPrc:%^VV2V%>ed ENDLEX ;
++V+PrsPrc:%^VV2V%>en ENDLEX ;
+
++V+Imprt+Sg2: ENDLEX ;
++V+Imprt+Pl2:%^VV2V%>et ENDLEX ;
+
+
+LEXICON V_VOELEN !! völen:vööl
+!! Orthographic variation in marking of long vowels, perfect participle '-d'
+
++V+Ind+Prs+Sg1:%^VV2V%>e ENDLEX ;
++V+Ind+Prs+Sg2:%>st ENDLEX ;
++V+Ind+Prs+Sg3:%>t ENDLEX ;
++V+Ind+Prs+Pl:%^VV2V%>et ENDLEX ;
++V+Ind+Prs+Pl:%^VV2V%>en ENDLEX ;
+
++V+Ind+Prt+Sg1:%>de ENDLEX ;
++V+Ind+Prt+Sg2:%>dest ENDLEX ;
++V+Ind+Prt+Sg3:%>de ENDLEX ;
++V+Ind+Prt+Pl:%>den ENDLEX ;
+
++V+Inf:%^VV2V%>en ENDLEX ;
++V+PrfPrc:%>d ENDLEX ;
++V+PrsPrc:%^VV2V%>en ENDLEX ;
+
++V+Imprt+Sg2: ENDLEX ;
++V+Imprt+Pl2:%^VV2V%>et ENDLEX ;
+
+
+LEXICON V_KOAKEN !! koaken:koak
+!! No orthographic variation in marking of long vowels or consonants, perfect participle '-ed'
+
++V+Ind+Prs+Sg1:%>e ENDLEX ;
++V+Ind+Prs+Sg2:%>st ENDLEX ;
++V+Ind+Prs+Sg3:%>t ENDLEX ;
++V+Ind+Prs+Pl:%>et ENDLEX ;
++V+Ind+Prs+Pl:%>en ENDLEX ;
+
++V+Ind+Prt+Sg1:%>de ENDLEX ;
++V+Ind+Prt+Sg2:%>dest ENDLEX ;
++V+Ind+Prt+Sg3:%>de ENDLEX ;
++V+Ind+Prt+Pl:%>den ENDLEX ;
+
++V+Inf:%>en ENDLEX ;
++V+PrfPrc:%>ed ENDLEX ;
++V+PrsPrc:%>en ENDLEX ;
+
++V+Imprt+Sg2: ENDLEX ;
++V+Imprt+Pl2:%>et ENDLEX ;
+
+
+LEXICON V_WAIEN !! waien:wai
+!! No orthographic variation in marking of long vowels or consonants, perfect participle '-d'
+
++V+Ind+Prs+Sg1:%>e ENDLEX ;
++V+Ind+Prs+Sg2:%>st ENDLEX ;
++V+Ind+Prs+Sg3:%>t ENDLEX ;
++V+Ind+Prs+Pl:%>et ENDLEX ;
++V+Ind+Prs+Pl:%>en ENDLEX ;
+
++V+Ind+Prt+Sg1:%>de ENDLEX ;
++V+Ind+Prt+Sg2:%>dest ENDLEX ;
++V+Ind+Prt+Sg3:%>de ENDLEX ;
++V+Ind+Prt+Pl:%>den ENDLEX ;
+
++V+Inf:%>en ENDLEX ;
++V+PrfPrc:%>d ENDLEX ;
++V+PrsPrc:%>en ENDLEX ;
+
++V+Imprt+Sg2: ENDLEX ;
++V+Imprt+Pl2:%>et ENDLEX ;
+
+
+LEXICON V_SAKKEN !! sakken:sakk
+!!  Orthographic variation in consonant length, perfect participle '-ed'
+
++V+Ind+Prs+Sg1:%>e ENDLEX ;
++V+Ind+Prs+Sg2:%^CC2C%>st ENDLEX ;
++V+Ind+Prs+Sg3:%^CC2C%>t ENDLEX ;
++V+Ind+Prs+Pl:%>et ENDLEX ;
++V+Ind+Prs+Pl:%>en ENDLEX ;
++V+Ind+Prt+Sg1:%^CC2C%>de ENDLEX ;
++V+Ind+Prt+Sg2:%^CC2C%>dest ENDLEX ;
++V+Ind+Prt+Sg3:%^CC2C%>de ENDLEX ;
++V+Ind+Prt+Pl:%^CC2C%>den ENDLEX ;
++V+Inf:%>en ENDLEX ;
++V+PrfPrc:%>ed ENDLEX ;
++V+PrsPrc:%>en ENDLEX ;
++V+Imprt+Sg2:%^CC2C ENDLEX ;
++V+Imprt+Pl2:%>et ENDLEX ;
 
 
 
