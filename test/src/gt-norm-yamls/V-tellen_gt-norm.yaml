@@ -1,0 +1,34 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+
+# todo:
+# Proofread the gold standard (below)
+# Then: run analyser, then correct. 
+# Orthographic variation in consonant length
+
+
+  Verb - tellen: # Verb 'to count' - full paradigm
+     tellen+V+Ind+Prs+Sg1: telle
+     tellen+V+Ind+Prs+Sg2: telst
+     tellen+V+Ind+Prs+Sg3: telt
+     tellen+V+Ind+Prs+Pl: [tellet, tellen]
+
+     tellen+V+Ind+Prt+Sg1: telde
+     tellen+V+Ind+Prt+Sg2: teldest
+     tellen+V+Ind+Prt+Sg3: telde
+     tellen+V+Ind+Prt+Pl: telden
+
+     tellen+V+Inf:  tellen
+     tellen+V+PrfPrc:  teld
+     tellen+V+PrsPrc:  tellen
+
+     tellen+V+Imprt+Sg2:  tel
+     tellen+V+Imprt+Pl2:  tellet

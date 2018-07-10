@@ -1,0 +1,33 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+
+# todo:
+# Proofread the gold standard (below)
+# Then: run analyser, then correct. 
+
+
+  Verb - hoapen: # Verb 'to hope' - full paradigm
+     hoapen+V+Ind+Prs+Sg1: [hoape, höäpe]
+     hoapen+V+Ind+Prs+Sg2: [hoapst, höäpst]
+     hoapen+V+Ind+Prs+Sg3: [hoapt, höäpt]
+     hoapen+V+Ind+Prs+Pl: [hoapet, höäpet, hoapen, höäpen]
+
+     hoapen+V+Ind+Prt+Sg1: [hoapde, höäpde]
+     hoapen+V+Ind+Prt+Sg2: [hoapdest, höäpdest]
+     hoapen+V+Ind+Prt+Sg3: [hoapde, höäpde]
+     hoapen+V+Ind+Prt+Pl: [hoapden, höäpden]
+
+     hoapen+V+Inf:  [hoapen, höäpen]
+     hoapen+V+PrfPrc:  [hoaped, höäped]
+     hoapen+V+PrsPrc:  [hoapen, höäpen]
+
+     hoapen+V+Imprt+Sg2:  [hoap, höäp]
+     hoapen+V+Imprt+Pl2:  [hoapet, höäpet]
