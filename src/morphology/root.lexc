@@ -20,7 +20,7 @@
 
 Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 %^CC2C !!≈ * @CODE@  for Deleting second consonant in orthographic geminate
-
+%^VV2V !!≈ * @CODE@  for Orthographic vowel deletion in open syllable
 
 !! !!Analysis symbols
 !  ----------------
