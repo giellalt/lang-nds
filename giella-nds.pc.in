@@ -1,0 +1,11 @@
+prefix=@prefix@
+exec_prefix=${prefix}
+datadir=@datarootdir@
+gtlang=nds
+dir=${datadir}/giella/${gtlang}
+srcdir=${datadir}/giella/${gtlang}
+
+Name: giella-nds
+Description: Finite-state language processing tools for Low German
+URL: http://divvun.no/doc/index.html
+Version: @VERSION@
