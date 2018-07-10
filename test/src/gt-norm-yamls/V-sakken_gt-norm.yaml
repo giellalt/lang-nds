@@ -1,0 +1,34 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+
+# todo:
+# Proofread the gold standard (below)
+# Then: run analyser, then correct. 
+# Orthographic variation in consonant length
+
+
+  Verb - sakken: # Verb 'to sink / to fall' - full paradigm
+     sakken+V+Ind+Prs+Sg1: sakke
+     sakken+V+Ind+Prs+Sg2: sakst
+     sakken+V+Ind+Prs+Sg3: sakt
+     sakken+V+Ind+Prs+Pl: [sakket, sakken]
+
+     sakken+V+Ind+Prt+Sg1: sakde
+     sakken+V+Ind+Prt+Sg2: sakdest
+     sakken+V+Ind+Prt+Sg3: sakde
+     sakken+V+Ind+Prt+Pl: sakden
+
+     sakken+V+Inf:  sakken
+     sakken+V+PrfPrc:  sakked
+     sakken+V+PrsPrc:  sakken
+
+     sakken+V+Imprt+Sg2:  sak
+     sakken+V+Imprt+Pl2:  sakket

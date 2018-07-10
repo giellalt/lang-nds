@@ -1,0 +1,32 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+
+# todo:
+# Proofread the gold standard (below)
+# Then: run analyser, then correct. 
+
+  Verb - waien: # Verb 'to blow (of wind)' - full paradigm
+     waien+V+Ind+Prs+Sg1: waie
+     waien+V+Ind+Prs+Sg2: waist
+     waien+V+Ind+Prs+Sg3: wait
+     waien+V+Ind+Prs+Pl: [waiet, waien]
+
+     waien+V+Ind+Prt+Sg1: waide
+     waien+V+Ind+Prt+Sg2: waidest
+     waien+V+Ind+Prt+Sg3: waide
+     waien+V+Ind+Prt+Pl: waiden
+
+     waien+V+Inf:  waien
+     waien+V+PrfPrc:  waid
+     waien+V+PrsPrc:  waien
+
+     waien+V+Imprt+Sg2:  wai
+     waien+V+Imprt+Pl2:  waiet

@@ -1,0 +1,33 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+
+# todo:
+# Proofread the gold standard (below)
+# Then: run analyser, then correct. 
+# Orthographic variation in marking of long vowels
+
+  Verb - völen: # Verb 'to feel' - full paradigm
+     völen+V+Ind+Prs+Sg1: völe
+     völen+V+Ind+Prs+Sg2: vöölst
+     völen+V+Ind+Prs+Sg3: vöölt
+     völen+V+Ind+Prs+Pl: [völet, völen]
+
+     völen+V+Ind+Prt+Sg1: vöölde
+     völen+V+Ind+Prt+Sg2: vööldest
+     völen+V+Ind+Prt+Sg3: vöölde
+     völen+V+Ind+Prt+Pl: vöölden
+
+     völen+V+Inf:  völen
+     völen+V+PrfPrc:  vööld
+     völen+V+PrsPrc:  völen
+
+     völen+V+Imprt+Sg2:  vööl
+     völen+V+Imprt+Pl2:  völet
