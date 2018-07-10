@@ -1,0 +1,33 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+
+# todo:
+# Proofread the gold standard (below)
+# Then: run analyser, then correct. 
+
+
+  Verb - koaken: # Verb 'to cook / to boil' - full paradigm
+     koaken+V+Ind+Prs+Sg1: koake
+     koaken+V+Ind+Prs+Sg2: koakst
+     koaken+V+Ind+Prs+Sg3: koakt
+     koaken+V+Ind+Prs+Pl: [koaket, koaken]
+
+     koaken+V+Ind+Prt+Sg1: koakde
+     koaken+V+Ind+Prt+Sg2: koakdest
+     koaken+V+Ind+Prt+Sg3: koakde
+     koaken+V+Ind+Prt+Pl: koakden
+
+     koaken+V+Inf:  koaken
+     koaken+V+PrfPrc:  koaked
+     koaken+V+PrsPrc:  koaken
+
+     koaken+V+Imprt+Sg2:  koak
+     koaken+V+Imprt+Pl2:  koaket
