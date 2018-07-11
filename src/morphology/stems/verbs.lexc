@@ -11,6 +11,8 @@ koaken:koak V_KOAKEN ;
 waien:wai V_WAIEN ;
 sakken:sakk V_SAKKEN ;
 
+leasen:leas V_WAIEN ; ! check s removal rule
+
 hoapen:hoap V_KOAKEN ; ! needs umlaut variant as well
 hoapen:höäp V_KOAKEN ; 
 
