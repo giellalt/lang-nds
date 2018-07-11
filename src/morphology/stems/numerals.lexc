@@ -1,6 +1,6 @@
 !! Numerals
 !  --------
-!! Numerals in UNDEFINED language are numbers.
+!! No numerals so far
 
 LEXICON Numerals
 numeral    Cases   ;
