@@ -23,14 +23,15 @@ Sets
  
 Rules
 
-"Deleting stem-final s in s genitive"
- s:0 <=> Vow s %>: _ ;
+"Deleting s before suffix -st"
+!! __ @RULENAME@ __
+ s:0 <=>      _ %> s  ;
 
-!!€ primus%>s
-!!€ primus>0
+!!€ leas%>st
+!!€ lea0%>st
 
-!!€grís%>s
-!!€grís>0
+!!$ leas%>st
+!!$ leas%>st
 
 
 "Orthographic vowel deletion in open syllable"
@@ -57,6 +58,3 @@ Rules
 !!$ tell%^CC2C>d
 !!$ tell0%>d
 		
-!"Deleting s before suffix -st"
-!! __ @RULENAME@ __
-! s:0 <=>      _ st ;
