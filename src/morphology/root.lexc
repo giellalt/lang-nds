@@ -150,3 +150,6 @@ LEXICON ENDLEX
 #;
 
 ! vim: set ft=xfst-lexc:
+
+LEXICON K
+# ;
