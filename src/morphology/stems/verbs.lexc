@@ -11,4 +11,7 @@ koaken:koak V_KOAKEN ;
 waien:wai V_WAIEN ;
 sakken:sakk V_SAKKEN ;
 
+hoapen:hoap V_KOAKEN ; ! needs umlaut variant as well
+hoapen:höäp V_KOAKEN ; 
+
 ! vim: set ft=xfst-lexc:
