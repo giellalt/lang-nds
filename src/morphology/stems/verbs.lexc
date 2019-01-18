@@ -4,16 +4,272 @@
 
 LEXICON Verbs
 
+baden:baad V_MAKEN ;
+bladen:blaad V_MAKEN ;
+bruken:bruuk V_MAKEN ;
+büten:büüt V_MAKEN ;
+düden:düüd V_MAKEN ;
+laden:laad V_MAKEN ;
 maken:maak V_MAKEN ;
+
+ballen:ball V_TELLEN ;
+bannen:bann V_TELLEN ;
+blaffen:blaff V_TELLEN ;
+blarren:blarr V_TELLEN ;
+kennen:kenn V_TELLEN ;
+passen:pass V_TELLEN ;
+pellen:pell V_TELLEN ;
+stellen:stell V_TELLEN ;
+stimmen:stimm V_TELLEN ; ! needs mid-vowel variant
+stimmen:stemm V_TELLEN ;
 tellen:tell V_TELLEN ;
+vüllen:vüll V_TELLEN ;
+
+anen:aan V_VOELEN ;
+balanceren:balanceer V_VOELEN ;
+degen:deeg V_VOELEN ;
+denen:deen V_VOELEN ;
+deven:deev V_VOELEN ;
+läderen:lädeer V_VOELEN ;
+luren:luur V_VOELEN ;
+mankeren:mankeer V_VOELEN ;
+nömen:nööm V_VOELEN ;
+öven:ööv V_VOELEN ;
+pröven:prööv V_VOELEN ;
+reklameren:reklameer V_VOELEN ;
+spölen:spööl V_VOELEN ;
+studeren:studeer V_VOELEN ;
+töven:tööv V_VOELEN ;
+varen:vaar V_VOELEN ;
 völen:vööl V_VOELEN ;
-koaken:koak V_KOAKEN ;
-waien:wai V_WAIEN ;
-sakken:sakk V_SAKKEN ;
 
-leasen:leas V_WAIEN ; ! check s removal rule
-
+achten:acht V_KOAKEN ; ! check t removal rule
+antwoorden:antwoord V_KOAKEN ;
+arbeiden:arbeid V_KOAKEN ;
+asken:ask V_KOAKEN ;
+beaden:bead V_KOAKEN ;
+dämpen:dämp V_KOAKEN ;
 hoapen:hoap V_KOAKEN ; ! needs umlaut variant as well
 hoapen:höäp V_KOAKEN ; 
+koaken:koak V_KOAKEN ;
+pråten:pråt V_KOAKEN ;
+smöyken:smöyk V_KOAKEN ;
+werken:werk V_KOAKEN ;
+wisken:wisk V_KOAKEN ;
+
+aarnen:aarn V_WAIEN ;
+akkeren:akker V_WAIEN ;
+änderen:änder V_WAIEN ;
+anteren:anter V_WAIEN ;
+argeren:arger V_WAIEN ;
+arven:arv V_WAIEN ;
+åsen:ås V_WAIEN ;
+babbelen:babbel V_WAIEN ;
+baggeren:bagger V_WAIEN ;
+baksen:baks V_WAIEN ;
+balleren:baller V_WAIEN ;
+bangen:bang V_WAIEN ;
+beadelen:beadel V_WAIEN ;
+beadelen:beddel V_WAIEN ; 
+bearen:bear V_WAIEN ;
+bearen:böären V_WAIEN ;
+biaveren:biaver V_WAIEN ;
+blaieren:blaier V_WAIEN ;
+blåsen:blås V_WAIEN ;
+blenkeren:blenker V_WAIEN ;
+blöäkeren:blöäker V_WAIEN ;
+bloien:bloi V_WAIEN ;
+bloisteren:bloister V_WAIEN ;
+boaren:boar V_WAIEN ;
+botteren:botter V_WAIEN ;
+bysteren:byster V_WAIEN ;
+deylen:deyl V_WAIEN ; 
+draien:drai V_WAIEN ;
+dröygen:dröyg V_WAIEN ;
+dwälmen:dälm V_WAIEN ;
+eysen:eys V_WAIEN ;
+klöänen:klöän V_WAIEN ;
+langen:lang V_WAIEN ;
+längen:läng V_WAIEN ;
+leasen:leas V_WAIEN ; ! check s removal rule
+leaven:leav V_WAIEN ;
+leyren:leyr V_WAIEN ;
+loaven:loav V_WAIEN ;
+loaven:löäv V_WAIEN ;
+löysen:löys V_WAIEN ;
+luusteren:luuster V_WAIEN ; !needs umlaut variant
+luusteren:lüüster V_WAIEN ;
+maien:mai V_WAIEN ;
+meynen:meyn V_WAIEN ;
+naien:nai V_WAIEN ;
+oapenen:oapen V_WAIEN ;
+reagenen:reagen V_WAIEN ;
+reakenen:reaken V_WAIEN ;
+reisen:reis V_WAIEN ;
+röykelen:röykel V_WAIEN ;
+röykeren:röyker V_WAIEN ;
+saien:sai V_WAIEN ;
+slykeren:slyker V_WAIEN ;
+snyen:sny V_WAIEN ;
+spealen:speal V_WAIEN ;
+spealen:spöäl V_WAIEN ;
+teykenen:teyken V_WAIEN ;
+vyren:vyr V_WAIEN ;
+waien:wai V_WAIEN ;
+wanderen:wander V_WAIEN ;
+wesselen:wessel V_WAIEN ;
+woanen:woan V_WAIEN ;
+wysen:wys V_WAIEN ;
+
+bakken:bakk V_SAKKEN ;
+bokken:bokk V_SAKKEN ;
+sakken:sakk V_SAKKEN ;
+setten:sett V_SAKKEN ;
+skätten:skatt V_SAKKEN ;
+skätten:skätt V_SAKKEN ;
+slukken:slukk V_SAKKEN ;
+smakken:smakk V_SAKKEN ;
+smekken:smekk V_SAKKEN ;
+snakken:snakk V_SAKKEN ;
+wachten:wacht V_SAKKEN ;
+
+!! Strong verbs 
+
+!! Class I
+
+blyven:bl%{eiØ%}%{yaØ%}v V_RYDEN ;
+byten:b%{eiØ%}%{yaØ%}t V_RYDEN ;
+dryven:dr%{eiØ%}%{yaØ%}v V_RYDEN ;
+dygen:d%{eiØ%}%{yaØ%}g V_RYDEN ;
+glyden:gl%{eiØ%}%{yaØ%}d V_RYDEN ;
+grynen:gr%{eiØ%}%{yaØ%}n V_RYDEN ;
+grypen:gr%{eiØ%}%{yaØ%}p V_RYDEN ;
+knypen:kn%{eiØ%}%{yaØ%}p V_RYDEN ;
+krygen:kr%{eiØ%}%{yaØ%}g V_RYDEN ;
+kyken:k%{eiØ%}%{yaØ%}k V_RYDEN ;
+kyven:k%{eiØ%}%{yaØ%}v V_RYDEN ;
+lyden:l%{eiØ%}%{yaØ%}d V_RYDEN ;
+lyken:l%{eiØ%}%{yaØ%}k V_RYDEN ;
+myden:m%{eiØ%}%{yaØ%}d V_RYDEN ;
+mygen:m%{eiØ%}%{yaØ%}g V_RYDEN ;
+nygen:n%{eiØ%}%{yaØ%}g V_RYDEN ;
+ryden:r%{eiØ%}%{yaØ%}d V_RYDEN ;
+rygen:r%{eiØ%}%{yaØ%}g V_RYDEN ;
+ryten:r%{eiØ%}%{yaØ%}t V_RYDEN ;
+skrygen:skr%{eiØ%}%{yaØ%}g V_RYDEN ;
+skryven:skr%{eiØ%}%{yaØ%}v V_RYDEN ;
+skynen:sk%{eiØ%}%{yaØ%}n V_RYDEN ;
+skyten:sk%{eiØ%}%{yaØ%}t V_RYDEN ;
+slyken:sl%{eiØ%}%{yaØ%}k V_RYDEN ;
+slyten:sl%{eiØ%}%{yaØ%}t V_RYDEN ;
+smyten:sm%{eiØ%}%{yaØ%}t V_RYDEN ;
+snyden:sn%{eiØ%}%{yaØ%}d V_RYDEN ;
+splyten:spl%{eiØ%}%{yaØ%}t V_RYDEN ;
+spygen:sp%{eiØ%}%{yaØ%}g V_RYDEN ;
+stygen:st%{eiØ%}%{yaØ%}g V_RYDEN ;
+stryden:str%{eiØ%}%{yaØ%}d V_RYDEN ;
+stryken:str%{eiØ%}%{yaØ%}k V_RYDEN ;
+swygen:sw%{eiØ%}%{yaØ%}g V_RYDEN ;
+sygen:s%{eiØ%}%{yaØ%}g V_RYDEN ;
+wyken:w%{eiØ%}%{yaØ%}k V_RYDEN ;
+wryten:wr%{eiØ%}%{yaØ%}t V_RYDEN ;
+wryten:r%{eiØ%}%{yaØ%}t V_RYDEN ; ! alternative stem with reduction of wr-cluster
+
+!! Class II 
+
+beden:b%{eouü%}%{Øeua%}d V_BEDEN ;
+dregen:dr%{eouü%}%{Øeua%}g V_BEDEN ;
+drepen:dr%{eouü%}%{Øeua%}p V_BEDEN ;
+geten:g%{eouü%}%{Øeua%}t V_BEDEN ;
+legen:l%{eouü%}%{Øeua%}g V_BEDEN ;
+krepen:kr%{eouü%}%{Øeua%}p V_BEDEN ;
+neten:n%{eouü%}%{Øeua%}t V_BEDEN ;
+seden:s%{eouü%}%{Øeua%}d V_BEDEN ;
+sketen:sk%{eouü%}%{Øeua%}t V_BEDEN ;
+vlegen:vl%{eouü%}%{Øeua%}g V_BEDEN ;
+vleten:vl%{eouü%}%{Øeua%}t V_BEDEN ;
+
+duken:d%{uüo%}%{uaØ%}k V_BEDEN ;
+dupen:d%{uüo%}%{uaØ%}p V_BEDEN ;
+krupen:kr%{uüo%}%{uaØ%}p V_BEDEN ;
+luken:l%{uüo%}%{uaØ%}k V_BEDEN ;
+skuven:sk%{uüo%}%{uaØ%}v V_BEDEN ;
+skruven:skr%{uüo%}%{uaØ%}v V_BEDEN ;
+sluken:sl%{uüo%}%{uaØ%}k V_BEDEN ;
+sluten:sl%{uüo%}%{uaØ%}t V_BEDEN ;
+snuten:sn%{uüo%}%{uaØ%}t V_BEDEN ;
+snuven:sn%{uüo%}%{uaØ%}v V_BEDEN ;
+spruten:spr%{uüo%}%{uaØ%}t V_BEDEN ;
+stuven:st%{uüo%}%{uaØ%}v V_BEDEN ;
+sugen:s%{uüo%}%{uaØ%}g V_BEDEN ;
+supen:s%{uüo%}%{uaØ%}p V_BEDEN ;
+
+!! Class III
+
+binden:b%{iua%}nd V_DRINKEN ;
+dringen:dr%{iua%}ng V_DRINKEN ;
+drinken:dr%{iua%}nk V_DRINKEN ;
+drinten:dr%{iua%}nt V_DRINKEN ;
+dwingen:dw%{iua%}ng V_DRINKEN ;
+klingen:kl%{iua%}ng V_DRINKEN ;
+singen:s%{iua%}ng V_DRINKEN ;
+slinden:sl%{iua%}nd V_DRINKEN ;
+slingen:sl%{iua%}ng V_DRINKEN ;
+springen:spr%{iua%}ng V_DRINKEN ;
+stinken:st%{iua%}nk V_DRINKEN ;
+swingen:sw%{iua%}ng V_DRINKEN ;
+vinden:v%{iua%}nd V_DRINKEN ;
+winden:w%{iua%}nd V_DRINKEN ;
+winken:w%{iua%}nk V_DRINKEN ;
+wringen:wr%{iua%}ng V_DRINKEN ;
+
+gelden:g%{eoa%}ld V_DRINKEN ;
+helpen:h%{eoa%}lp V_DRINKEN ;
+skelden:sk%{eoa%}ld V_DRINKEN ;
+smelten:sm%{eoa%}lt V_DRINKEN ;
+swelgen:sw%{eoa%}lg V_DRINKEN ;
+vechten:v%{eoa%}cht V_DRINKEN ;
+
+bergen:b%{eoa%}rg V_DRINKEN ;
+bersten:b%{eoa%}rst V_DRINKEN ;
+dersken:d%{eoa%}rsk V_DRINKEN ;
+kerven:k%{eoa%}rv V_DRINKEN ;
+sterven:st%{eoa%}rv V_DRINKEN ;
+werpen:w%{eoa%}rp V_DRINKEN ;
+werden:w%{eoa%}rd V_DRINKEN ;
+werven:w%{eoa%}rv V_DRINKEN ;
+
+ginnen:g%{iua%}nn V_WINNEN ;
+spinnen:sp%{iua%}nn V_WINNEN ;
+swimmen:sw%{iua%}mm V_WINNEN ;
+winnen:w%{iua%}nn V_WINNEN ;
+
+kwellen:kw%{eoa%}ll V_WINNEN ;
+swellen:sw%{eoa%}ll V_WINNEN ;
+
+werren:w%{eoa%}rr V_WINNEN ;
+
+!! Class IV
+
+dreapen:dr%{eiao%}%{aeØ%}p V_NIAMEN ;
+niamen:n%{iaeo%}%{aeØ%}m V_NIAMEN ;
+
+breaken:br%{eio%}%{aØo%}k V_RYDEN ;
+spreaken:spr%{eio%}%{aØo%}k V_RYDEN ;
+
+!! Class V
+
+dreapen:dr%{eia%}%{aeØ%}p V_STEAKEN ;
+eaten:%{eia%}%{aeØ%}t V_STEAKEN ;
+geaten:g%{eia%}%{aeØ%}t V_STEAKEN ;
+giaven:g%{iae%}%{aeØ%}v V_STEAKEN ;
+leasen:l%{eia%}%{aeØ%}s V_STEAKEN ;
+meaten:m%{eia%}%{aeØ%}t V_STEAKEN ;
+pleagen:pl%{eia%}%{aeØ%}g V_STEAKEN ;
+steaken:st%{eia%}%{aeØ%}k V_STEAKEN ;
+treaden:tr%{eia%}%{aeØ%}d V_STEAKEN ;
+weagen:w%{eia%}%{aeØ%}g V_STEAKEN ;
+
+
 
 ! vim: set ft=xfst-lexc:

@@ -1,21 +1,31 @@
 !! Verb inflection
 !  ---------------
-!! The LOW GERMAN language verbs inflect in persons.
+!! The LOW SAXON language verbs inflect in persons. So far only for northwestern dialects.
 
 LEXICON V_TELLEN !! tellen:tell
 !!  Orthographic variation in consonant length
 +V+Ind+Prs+Sg1:%>e ENDLEX ;
 +V+Ind+Prs+Sg2:%^CC2C%>st ENDLEX ;
 +V+Ind+Prs+Sg3:%^CC2C%>t ENDLEX ;
-+V+Ind+Prs+Pl:%>et ENDLEX ;
-+V+Ind+Prs+Pl:%>en ENDLEX ;
++V+Ind+Prs+Pl1:%>et ENDLEX ;
++V+Ind+Prs+Pl2:%>et ENDLEX ;
++V+Ind+Prs+Pl3:%>et ENDLEX ;
++V+Ind+Prs+Pl1:%>en ENDLEX ;
++V+Ind+Prs+Pl2:%>en ENDLEX ;
++V+Ind+Prs+Pl3:%>en ENDLEX ;
+
 +V+Ind+Prt+Sg1:%^CC2C%>de ENDLEX ;
 +V+Ind+Prt+Sg2:%^CC2C%>dest ENDLEX ;
 +V+Ind+Prt+Sg3:%^CC2C%>de ENDLEX ;
-+V+Ind+Prt+Pl:%^CC2C%>den ENDLEX ;
++V+Ind+Prt+Pl1:%^CC2C%>den ENDLEX ;
++V+Ind+Prt+Pl2:%^CC2C%>den ENDLEX ;
++V+Ind+Prt+Pl3:%^CC2C%>den ENDLEX ;
+
 +V+Inf:%>en ENDLEX ;
 +V+PrfPrc:%^CC2C%>d ENDLEX ;
 +V+PrsPrc:%>en ENDLEX ;
++V+PrsPrc:%>end ENDLEX ;
+
 +V+Imprt+Sg2:%^CC2C ENDLEX ;
 +V+Imprt+Pl2:%>et ENDLEX ;
 
@@ -25,17 +35,24 @@ LEXICON V_MAKEN !! maken:maak
 +V+Ind+Prs+Sg1:%^VV2V%>e ENDLEX ;
 +V+Ind+Prs+Sg2:%>st ENDLEX ;
 +V+Ind+Prs+Sg3:%>t ENDLEX ;
-+V+Ind+Prs+Pl:%^VV2V%>et ENDLEX ;
-+V+Ind+Prs+Pl:%^VV2V%>en ENDLEX ;
++V+Ind+Prs+Pl1:%^VV2V%>et ENDLEX ;
++V+Ind+Prs+Pl2:%^VV2V%>et ENDLEX ;
++V+Ind+Prs+Pl3:%^VV2V%>et ENDLEX ;
++V+Ind+Prs+Pl1:%^VV2V%>en ENDLEX ;
++V+Ind+Prs+Pl2:%^VV2V%>en ENDLEX ;
++V+Ind+Prs+Pl3:%^VV2V%>en ENDLEX ;
 
 +V+Ind+Prt+Sg1:%>de ENDLEX ;
 +V+Ind+Prt+Sg2:%>dest ENDLEX ;
 +V+Ind+Prt+Sg3:%>de ENDLEX ;
-+V+Ind+Prt+Pl:%>den ENDLEX ;
++V+Ind+Prt+Pl1:%>den ENDLEX ;
++V+Ind+Prt+Pl2:%>den ENDLEX ;
++V+Ind+Prt+Pl3:%>den ENDLEX ;
 
 +V+Inf:%^VV2V%>en ENDLEX ;
 +V+PrfPrc:%^VV2V%>ed ENDLEX ;
 +V+PrsPrc:%^VV2V%>en ENDLEX ;
++V+PrsPrc:%^VV2V%>end ENDLEX ;
 
 +V+Imprt+Sg2: ENDLEX ;
 +V+Imprt+Pl2:%^VV2V%>et ENDLEX ;
@@ -47,17 +64,24 @@ LEXICON V_VOELEN !! völen:vööl
 +V+Ind+Prs+Sg1:%^VV2V%>e ENDLEX ;
 +V+Ind+Prs+Sg2:%>st ENDLEX ;
 +V+Ind+Prs+Sg3:%>t ENDLEX ;
-+V+Ind+Prs+Pl:%^VV2V%>et ENDLEX ;
-+V+Ind+Prs+Pl:%^VV2V%>en ENDLEX ;
++V+Ind+Prs+Pl1:%^VV2V%>et ENDLEX ;
++V+Ind+Prs+Pl2:%^VV2V%>et ENDLEX ;
++V+Ind+Prs+Pl3:%^VV2V%>et ENDLEX ;
++V+Ind+Prs+Pl1:%^VV2V%>en ENDLEX ;
++V+Ind+Prs+Pl2:%^VV2V%>en ENDLEX ;
++V+Ind+Prs+Pl3:%^VV2V%>en ENDLEX ;
 
 +V+Ind+Prt+Sg1:%>de ENDLEX ;
 +V+Ind+Prt+Sg2:%>dest ENDLEX ;
 +V+Ind+Prt+Sg3:%>de ENDLEX ;
-+V+Ind+Prt+Pl:%>den ENDLEX ;
++V+Ind+Prt+Pl1:%>den ENDLEX ;
++V+Ind+Prt+Pl2:%>den ENDLEX ;
++V+Ind+Prt+Pl3:%>den ENDLEX ;
 
 +V+Inf:%^VV2V%>en ENDLEX ;
 +V+PrfPrc:%>d ENDLEX ;
 +V+PrsPrc:%^VV2V%>en ENDLEX ;
++V+PrsPrc:%^VV2V%>end ENDLEX ;
 
 +V+Imprt+Sg2: ENDLEX ;
 +V+Imprt+Pl2:%^VV2V%>et ENDLEX ;
@@ -69,17 +93,24 @@ LEXICON V_KOAKEN !! koaken:koak
 +V+Ind+Prs+Sg1:%>e ENDLEX ;
 +V+Ind+Prs+Sg2:%>st ENDLEX ;
 +V+Ind+Prs+Sg3:%>t ENDLEX ;
-+V+Ind+Prs+Pl:%>et ENDLEX ;
-+V+Ind+Prs+Pl:%>en ENDLEX ;
++V+Ind+Prs+Pl1:%>et ENDLEX ;
++V+Ind+Prs+Pl2:%>et ENDLEX ;
++V+Ind+Prs+Pl3:%>et ENDLEX ;
++V+Ind+Prs+Pl1:%>en ENDLEX ;
++V+Ind+Prs+Pl2:%>en ENDLEX ;
++V+Ind+Prs+Pl3:%>en ENDLEX ;
 
 +V+Ind+Prt+Sg1:%>de ENDLEX ;
 +V+Ind+Prt+Sg2:%>dest ENDLEX ;
 +V+Ind+Prt+Sg3:%>de ENDLEX ;
-+V+Ind+Prt+Pl:%>den ENDLEX ;
++V+Ind+Prt+Pl1:%>den ENDLEX ;
++V+Ind+Prt+Pl2:%>den ENDLEX ;
++V+Ind+Prt+Pl3:%>den ENDLEX ;
 
 +V+Inf:%>en ENDLEX ;
 +V+PrfPrc:%>ed ENDLEX ;
 +V+PrsPrc:%>en ENDLEX ;
++V+PrsPrc:%>end ENDLEX ;
 
 +V+Imprt+Sg2: ENDLEX ;
 +V+Imprt+Pl2:%>et ENDLEX ;
@@ -91,17 +122,24 @@ LEXICON V_WAIEN !! waien:wai
 +V+Ind+Prs+Sg1:%>e ENDLEX ;
 +V+Ind+Prs+Sg2:%>st ENDLEX ;
 +V+Ind+Prs+Sg3:%>t ENDLEX ;
-+V+Ind+Prs+Pl:%>et ENDLEX ;
-+V+Ind+Prs+Pl:%>en ENDLEX ;
++V+Ind+Prs+Pl1:%>et ENDLEX ;
++V+Ind+Prs+Pl2:%>et ENDLEX ;
++V+Ind+Prs+Pl3:%>et ENDLEX ;
++V+Ind+Prs+Pl1:%>en ENDLEX ;
++V+Ind+Prs+Pl2:%>en ENDLEX ;
++V+Ind+Prs+Pl3:%>en ENDLEX ;
 
 +V+Ind+Prt+Sg1:%>de ENDLEX ;
 +V+Ind+Prt+Sg2:%>dest ENDLEX ;
 +V+Ind+Prt+Sg3:%>de ENDLEX ;
-+V+Ind+Prt+Pl:%>den ENDLEX ;
++V+Ind+Prt+Pl1:%>den ENDLEX ;
++V+Ind+Prt+Pl2:%>den ENDLEX ;
++V+Ind+Prt+Pl3:%>den ENDLEX ;
 
 +V+Inf:%>en ENDLEX ;
 +V+PrfPrc:%>d ENDLEX ;
 +V+PrsPrc:%>en ENDLEX ;
++V+PrsPrc:%>end ENDLEX ;
 
 +V+Imprt+Sg2: ENDLEX ;
 +V+Imprt+Pl2:%>et ENDLEX ;
@@ -113,19 +151,204 @@ LEXICON V_SAKKEN !! sakken:sakk
 +V+Ind+Prs+Sg1:%>e ENDLEX ;
 +V+Ind+Prs+Sg2:%^CC2C%>st ENDLEX ;
 +V+Ind+Prs+Sg3:%^CC2C%>t ENDLEX ;
-+V+Ind+Prs+Pl:%>et ENDLEX ;
-+V+Ind+Prs+Pl:%>en ENDLEX ;
++V+Ind+Prs+Pl1:%>et ENDLEX ;
++V+Ind+Prs+Pl2:%>et ENDLEX ;
++V+Ind+Prs+Pl3:%>et ENDLEX ;
++V+Ind+Prs+Pl1:%>en ENDLEX ;
++V+Ind+Prs+Pl2:%>en ENDLEX ;
++V+Ind+Prs+Pl3:%>en ENDLEX ;
+
 +V+Ind+Prt+Sg1:%^CC2C%>de ENDLEX ;
 +V+Ind+Prt+Sg2:%^CC2C%>dest ENDLEX ;
 +V+Ind+Prt+Sg3:%^CC2C%>de ENDLEX ;
-+V+Ind+Prt+Pl:%^CC2C%>den ENDLEX ;
++V+Ind+Prt+Pl1:%^CC2C%>den ENDLEX ;
++V+Ind+Prt+Pl2:%^CC2C%>den ENDLEX ;
++V+Ind+Prt+Pl3:%^CC2C%>den ENDLEX ;
+
 +V+Inf:%>en ENDLEX ;
 +V+PrfPrc:%>ed ENDLEX ;
 +V+PrsPrc:%>en ENDLEX ;
++V+PrsPrc:%>end ENDLEX ;
+
 +V+Imprt+Sg2:%^CC2C ENDLEX ;
 +V+Imprt+Pl2:%>et ENDLEX ;
 
 
+LEXICON V_RYDEN !! ryden:r%{ei0%}%{ya0%}d
+!! Strong verb class 1, 4c
+
++V+Ind+Prs+Sg1:%>e ENDLEX ;
++V+Ind+Prs+Sg2:%^ABL1S%>st ENDLEX ;
++V+Ind+Prs+Sg3:%^ABL1S%>t ENDLEX ;
++V+Ind+Prs+Pl1:%>et ENDLEX ;
++V+Ind+Prs+Pl2:%>et ENDLEX ;
++V+Ind+Prs+Pl3:%>et ENDLEX ;
++V+Ind+Prs+Pl1:%>en ENDLEX ;
++V+Ind+Prs+Pl2:%>en ENDLEX ;
++V+Ind+Prs+Pl3:%>en ENDLEX ;
+
++V+Ind+Prt+Sg1:%^ABL2 ENDLEX ;
++V+Ind+Prt+Sg2:%^ABL2%>st ENDLEX ;
++V+Ind+Prt+Sg3:%^ABL2 ENDLEX ;
++V+Ind+Prt+Pl1:%^ABL2%>en ENDLEX ;
++V+Ind+Prt+Pl2:%^ABL2%>en ENDLEX ;
++V+Ind+Prt+Pl3:%^ABL2%>en ENDLEX ;
+
++V+Inf:%>en ENDLEX ;
++V+PrfPrc:%^ABL3%>en ENDLEX ;
++V+PrsPrc:%>en ENDLEX ;
++V+PrsPrc:%>end ENDLEX ;
+
++V+Imprt+Sg2: ENDLEX ;
++V+Imprt+Pl2:%>et ENDLEX ;
+
+
+LEXICON V_BEDEN !! beden:b%{eouü%}%{0eua%}d
+!! Strong verb class 2
+
++V+Ind+Prs+Sg1:%^VV2V%>e ENDLEX ;
++V+Ind+Prs+Sg2:%^ABL1S%>st ENDLEX ;
++V+Ind+Prs+Sg3:%^ABL1S%>t ENDLEX ;
++V+Ind+Prs+Pl1:%^VV2V%>et ENDLEX ;
++V+Ind+Prs+Pl2:%^VV2V%>et ENDLEX ;
++V+Ind+Prs+Pl3:%^VV2V%>et ENDLEX ;
++V+Ind+Prs+Pl1:%^VV2V%>en ENDLEX ;
++V+Ind+Prs+Pl2:%^VV2V%>en ENDLEX ;
++V+Ind+Prs+Pl3:%^VV2V%>en ENDLEX ;
+
++V+Ind+Prt+Sg1:%^ABL2 ENDLEX ;
++V+Ind+Prt+Sg2:%^ABL2%>st ENDLEX ;
++V+Ind+Prt+Sg3:%^ABL2 ENDLEX ;
++V+Ind+Prt+Pl1:%^ABL2%>en ENDLEX ;
++V+Ind+Prt+Pl2:%^ABL2%>en ENDLEX ;
++V+Ind+Prt+Pl3:%^ABL2%>en ENDLEX ;
+
++V+Inf:%^VV2V%>en ENDLEX ;
++V+PrfPrc:%^ABL3%>en ENDLEX ;
++V+PrsPrc:%^VV2V%>en ENDLEX ;
++V+PrsPrc:%^VV2V%>end ENDLEX ;
+
++V+Imprt+Sg2: ENDLEX ;
++V+Imprt+Pl2:%^VV2V%>et ENDLEX ;
+
+
+LEXICON V_DRINKEN !! drinken:dr%{iua%}nk
+!! Strong verb class 3
+
++V+Ind+Prs+Sg1:%>e ENDLEX ;
++V+Ind+Prs+Sg2:%>st ENDLEX ;
++V+Ind+Prs+Sg3:%>t ENDLEX ;
++V+Ind+Prs+Pl1:%>et ENDLEX ;
++V+Ind+Prs+Pl2:%>et ENDLEX ;
++V+Ind+Prs+Pl3:%>et ENDLEX ;
++V+Ind+Prs+Pl1:%>en ENDLEX ;
++V+Ind+Prs+Pl2:%>en ENDLEX ;
++V+Ind+Prs+Pl3:%>en ENDLEX ;
+
++V+Ind+Prt+Sg1:%^ABL2 ENDLEX ;
++V+Ind+Prt+Sg2:%^ABL2%>st ENDLEX ;
++V+Ind+Prt+Sg3:%^ABL2 ENDLEX ;
++V+Ind+Prt+Pl1:%^ABL2%>en ENDLEX ;
++V+Ind+Prt+Pl2:%^ABL2%>en ENDLEX ;
++V+Ind+Prt+Pl3:%^ABL2%>en ENDLEX ;
+
++V+Inf:%>en ENDLEX ;
++V+PrfPrc:%^ABL3%>en ENDLEX ;
++V+PrsPrc:%>en ENDLEX ;
++V+PrsPrc:%>end ENDLEX ;
+
++V+Imprt+Sg2: ENDLEX ;
++V+Imprt+Pl2:%>et ENDLEX ;
+
+LEXICON V_WINNEN !! winnen:w%{iua%}nn
+!! Strong verb class 3, stem ending with two identical consonants
+
++V+Ind+Prs+Sg1:%>e ENDLEX ;
++V+Ind+Prs+Sg2:%^CC2C%>st ENDLEX ;
++V+Ind+Prs+Sg3:%^CC2C%>t ENDLEX ;
++V+Ind+Prs+Pl1:%>et ENDLEX ;
++V+Ind+Prs+Pl2:%>et ENDLEX ;
++V+Ind+Prs+Pl3:%>et ENDLEX ;
++V+Ind+Prs+Pl1:%>en ENDLEX ;
++V+Ind+Prs+Pl2:%>en ENDLEX ;
++V+Ind+Prs+Pl3:%>en ENDLEX ;
+
++V+Ind+Prt+Sg1:%^CC2C%^ABL2 ENDLEX ;
++V+Ind+Prt+Sg2:%^CC2C%^ABL2%>st ENDLEX ;
++V+Ind+Prt+Sg3:%^CC2C%^ABL2 ENDLEX ;
++V+Ind+Prt+Pl1:%^ABL2%>en ENDLEX ;
++V+Ind+Prt+Pl2:%^ABL2%>en ENDLEX ;
++V+Ind+Prt+Pl3:%^ABL2%>en ENDLEX ;
+
++V+Inf:%>en ENDLEX ;
++V+PrfPrc:%^ABL3%>en ENDLEX ;
++V+PrsPrc:%>en ENDLEX ;
++V+PrsPrc:%>end ENDLEX ;
+
++V+Imprt+Sg2:%^CC2C ENDLEX ;
++V+Imprt+Pl2:%>et ENDLEX ;
+
+
+LEXICON V_NIAMEN !! niamen:n%{iaeo%}%{ae0%}m
+!! Strong verb class 4a,b
+
++V+Ind+Prs+Sg1:%>e ENDLEX ;
++V+Ind+Prs+Sg2:%^ABL1S%>st ENDLEX ;
++V+Ind+Prs+Sg3:%^ABL1S%>t ENDLEX ;
++V+Ind+Prs+Pl1:%>et ENDLEX ;
++V+Ind+Prs+Pl2:%>et ENDLEX ;
++V+Ind+Prs+Pl3:%>et ENDLEX ;
++V+Ind+Prs+Pl1:%>en ENDLEX ;
++V+Ind+Prs+Pl2:%>en ENDLEX ;
++V+Ind+Prs+Pl3:%>en ENDLEX ;
+
++V+Ind+Prt+Sg1:%^ABL2U ENDLEX ;
++V+Ind+Prt+Sg2:%^ABL2U%>st ENDLEX ;
++V+Ind+Prt+Sg3:%^ABL2U ENDLEX ;
++V+Ind+Prt+Pl1:%^ABL2U%>en ENDLEX ;
++V+Ind+Prt+Pl2:%^ABL2U%>en ENDLEX ;
++V+Ind+Prt+Pl3:%^ABL2U%>en ENDLEX ;
+
++V+Inf:%>en ENDLEX ;
++V+PrfPrc:%^ABL3%>en ENDLEX ;
++V+PrsPrc:%>en ENDLEX ;
++V+PrsPrc:%>end ENDLEX ;
+
++V+Imprt+Sg2: ENDLEX ;
++V+Imprt+Pl2:%>et ENDLEX ;
+
+
+LEXICON V_STEAKEN !! steaken:st%{eia%}%{ae0%}k
+!! Strong verb class 5
+
++V+Ind+Prs+Sg1:%>e ENDLEX ;
++V+Ind+Prs+Sg2:%^ABL1S%>st ENDLEX ;
++V+Ind+Prs+Sg3:%^ABL1S%>t ENDLEX ;
++V+Ind+Prs+Pl1:%>et ENDLEX ;
++V+Ind+Prs+Pl2:%>et ENDLEX ;
++V+Ind+Prs+Pl3:%>et ENDLEX ;
++V+Ind+Prs+Pl1:%>en ENDLEX ;
++V+Ind+Prs+Pl2:%>en ENDLEX ;
++V+Ind+Prs+Pl3:%>en ENDLEX ;
+
++V+Ind+Prt+Sg1:%^ABL2U ENDLEX ;
++V+Ind+Prt+Sg2:%^ABL2U%>st ENDLEX ;
++V+Ind+Prt+Sg3:%^ABL2U ENDLEX ;
++V+Ind+Prt+Pl1:%^ABL2U%>en ENDLEX ;
++V+Ind+Prt+Pl2:%^ABL2U%>en ENDLEX ;
++V+Ind+Prt+Pl3:%^ABL2U%>en ENDLEX ;
+
++V+Inf:%>en ENDLEX ;
++V+PrfPrc:%>en ENDLEX ;
++V+PrsPrc:%>en ENDLEX ;
++V+PrsPrc:%>end ENDLEX ;
+
++V+Imprt+Sg2: ENDLEX ;
++V+Imprt+Pl2:%>et ENDLEX ;
 
 ! vim: set ft=xfst-lexc:
+
+
+
+
 

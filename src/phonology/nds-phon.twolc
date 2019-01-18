@@ -1,6 +1,6 @@
-!! =================================== !
+!! ================================================== !
 !! The Low German morphophonological/twolc rules file !
-!! =================================== !
+!! ================================================== !
 
 Alphabet
  a b c d e f g h i j k l m n o p q r s t u v w x y z æ ø å
@@ -9,9 +9,49 @@ Alphabet
  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Æ Ø Å
  Á É Ó Ú Í À È Ò Ù Ì Ä Ë Ö Ü Ï Â Ê Ô Û Î Ã Ý þ Ñ Ð
 
+! for the i-umlaut of å and the u-umlaut of a
+%{åöä%}:å
+%{Øäö%}:0
+%{aö%}:a
+%{Øä%}:0
+
+! for the the ablaut grades of the strong verb classes, the ordering of the letters roughly follows the ablaut grades
+! long ablaut grade 1 as default
+%{eiØ%}:0 !! strong verb class 1 1st part
+%{yaØ%}:y !! strong verb class 1 2nd part
+%{eouü%}:e !! strong verb class 2a 1st part
+%{Øeua%}:e !! strong verb class 2a 2nd part
+%{uüØ%}:u !! strong verb class 2b 1st part
+%{uaØ%}:u !! strong verb class 2b 2nd part
+%{iua%}:i !! strong verb class 3a 
+%{eoa%}:e !! strong verb class 3bc
+%{iaeo%}:i !! strong verb class 4a 1st part
+%{aeØ%}:a !! strong verb class 4ab 2nd part
+%{eiao%}:e !! strong verb class 4b 1st part
+%{eio%}:e !! strong verb class 4c 1st part
+%{aØo%}:a !! strong verb class 4c 2nd part 
+%{iae%}:i !! strong verb class 5a 1st part 
+%{aeØ%}:a !! strong verb class 5ab 2nd part
+%{eia%}:e !! strong verb class 5b 1st part
+
+
 !! TRIGGERS
 %^CC2C:0 !!≈ * @CODE@  for Deleting second consonant in orthographic geminate
 %^VV2V:0 !!≈ * @CODE@  for Orthographic vowel deletion in open syllable
+%^IUML:0 !!≈ * @CODE@  for i-umlaut
+%^UUML:0 !!≈ * @CODE@  for u-umlaut
+! %^ABL1O:0  !!≈ * @CODE@  for ablaut grade 1 in open syllable (ablaut grade 1 in closed syllable used as default) -- probably not needed, can be resolved by using %^VV2V
+%^ABL1NL:0  !!≈ * @CODE@  for non-lengthened ablaut grade 1 in class 4 and 5 in some southern dialects, ABL1 = ablaut grade 1, NL = non-lengthened
+! Historically short vowels in open syllable where lengthened. However, this lengthening did not happen in all instances. Especially in several southern dialects, the short vowel has been preserved, therefore "non-lengthened".
+%^ABL1S:0  !!≈ * @CODE@  for shortened ablaut grade 1 in 2nd and 3rd sg. of present tense, S = shortened
+! In Middle Low Saxon, the vowel of the 2nd and 3rd sg. was shortened before double consonants. 
+%^ABL2:0  !!≈ * @CODE@  for ablaut grade 2 in preterite, ABL2 = ablaut grade 2
+%^ABL2W:0  !!≈ * @CODE@  for specific preterite forms in Westphalian dialects, W = Westphalian
+! Some Westphalian dialects, like those from Eastern Westphalia and the Sauerland, have preserved a vowel distinction between 1st and 3rd sg. vs. 2nd sg. and pl. 
+%^ABL2U:0  !!≈ * @CODE@  for irregular umlaut of ablaut grade 2 in class 4a,b and 5, U = (irregular) umlaut
+%^ABL3:0  !!≈ * @CODE@  for long ablaut grade 3 in perfect participle
+%^ABL3NL:0  !!≈ * @CODE@  for short ablaut grade 3 in some southern dialects, NL = non-lengthened 
+
 
  %> ;
 
@@ -32,7 +72,22 @@ Rules
 
 !!$ leas%>st
 !!$ leas%>st
+      s _ %^CC2C: ;
 
+
+
+"Deleting t before suffix -t"
+!! __ @RULENAME@ __
+ t:0 <=>      _ %> t  ;
+
+!!achten+V+Ind+Prs+Sg3: ____
+!!€ acht%>t
+!!€ ach0%>t
+
+!!$ acht%>t
+!!$ acht%>t
+
+   t _ %^CC2C: ;
 
 "Orthographic vowel deletion in open syllable"
 !! __ @RULENAME@ __
@@ -49,7 +104,8 @@ Rules
 "Orthographic consonant deletion in closed syllable"
 !! __ @RULENAME@ __
  Cx:0 <=>      Cx _ %^CC2C: ;
-        where Cx in (b d f g k l m n p r s t v) ;
+        where Cx in (b d f g k l m n p r v) ;
+!        where Cx in (b d f g k l m n p r s t v) ;
 
 !! tellen+V+PrfPrc 
 !!€ tell%^CC2C>d
@@ -58,3 +114,547 @@ Rules
 !!$ tell%^CC2C>d
 !!$ tell0%>d
 		
+"I-umlaut for short vowels in closed syllable or long vowels in open syllable"
+!! __@RULENAME@__ 
+ Vx:Vy <=> _ Cns:* Vow:* Cns:* %^IUML: ; 
+     where Vx in ( a o u )
+           Vy in ( ä ö ü )
+           matched ;
+
+!! sak+N+Pl+Nom: __seahkka/pussi/bag__
+!!€ sakk%^IUML%>e
+!!€ säkk0%>e
+
+!!$ sakk%^IUML%>e 
+!!$ sakk0%>e 
+
+!! slag+N+Pl+NOM: __časkin/lyönti/hit__
+!!€ slag%^IUML%>e
+!!€ släg0%>e
+
+!!$ slag%^IUML%>e
+!!$ slag0%>e
+
+!! holt+N+Pl+Nom: __muorra/puu/wood__
+!!€ holt%^IUML%>er 
+!!€ hölt0%>er
+
+!!$ holt%^IUML%>er 
+!!$ holt0%>er
+
+!! broder+N+Pl+Nom: __viellja/veli/brother__
+!!€ broder%^IUML%>s 
+!!€ bröder0%>s
+
+!!$ broder%^IUML%>s 
+!!$ broder0%>s
+
+!! busk+N+Pl+Nom: __miestta/pensas/bush__
+!!€ busk%^IUML%>e 
+!!€ büsk0%>e
+
+!!$ busk%^IUML%>e
+!!$ busk0%>e
+
+!2019-01-18a!"I-umlaut for long vowels in closed syllable"
+!2019-01-18a!!! __@RULENAME@__ 
+!2019-01-18a! Vx:Vy <=> Vx:Vy _ Cns:* Vow:* Cns:* %^IUML: ; 
+!2019-01-18a!           _   Vx:Vy Cns:* Vow:* Cns:* (%^VV2V:) %^IUML: ;
+!2019-01-18a!     where Vx in ( a o u )
+!2019-01-18a!           Vy in ( ä ö ü )
+!2019-01-18a!           matched ;
+!2019-01-18a!
+!2019-01-18a!!! maagd+N+Pl+Nom: __biigá/piika/maid__
+!2019-01-18a!!!€ maagd%^IUML%>e
+!2019-01-18a!!!€ määgd0%>e
+!2019-01-18a!
+!2019-01-18a!!!$ maagd%^IUML%>e
+!2019-01-18a!!!$ maagd0%>e
+!2019-01-18a!
+!2019-01-18a!!!$ maagd%^IUML%>e
+!2019-01-18a!!!$ mäagd0%>e
+!2019-01-18a!
+!2019-01-18a!!! woord+N+Pl+Nom: __sátni/sana/word__
+!2019-01-18a!!!€ woord%^IUML%>e
+!2019-01-18a!!!€ wöörd0%>e
+!2019-01-18a!
+!2019-01-18a!!!$ woord%^IUML%>e
+!2019-01-18a!!!$ woord0%>e
+!2019-01-18a! 
+!2019-01-18a!!! vuust+N+Pl+Nom: __čorbma/nyrkki/fist__
+!2019-01-18a!!!€ vuust%^IUML%>e
+!2019-01-18a!!!€ vüüst0%>e 
+!2019-01-18a!
+!2019-01-18a!!!$ vuust%^IUML%>e
+!2019-01-18a!!!$ vuust0%>e
+!2019-01-18a!
+!2019-01-18a!"I-umlaut for å" 
+!2019-01-18a!!! __@RULENAME@__ 
+!2019-01-18a! %{åöä%}:ö <=> _ %{0äö%}: Cns:* %^IUML: ; 
+!2019-01-18a!           matched ;
+!2019-01-18a!
+!2019-01-18a!"Double marking of i-umlaut for å"
+!2019-01-18a!!! __@RULENAME@__ 
+!2019-01-18a! %{0äö%}:ä <=> ö _ Cns:* %^IUML: ;
+!2019-01-18a!           matched ; 
+!2019-01-18a!
+!2019-01-18a!!! råd+N+Pl+Nom: __ráđđi/neuvo/council__
+!2019-01-18a!!!€ r%{åöä%}%{0äö%}d%^IUML%>e
+!2019-01-18a!!!€ röäd0%>e
+!2019-01-18a!
+!2019-01-18a!!!$ r%{åöä%}%{0äö%}d%^IUML%>e
+!2019-01-18a!!!$ rö%{0äö%}d0%>e
+!2019-01-18a!
+!2019-01-18a!!!$ r%{åöä%}%{0äö%}d%^IUML%>e
+!2019-01-18a!!!$ r%{åöä%}%{0äö%}d0%>e
+!2019-01-18a!
+!2019-01-18a!"I-umlaut for long vowel in closed > open syllable"
+!2019-01-18a!
+!2019-01-18a!!! daal+N+Pl+Nom: __leahki/laakso/valley__
+!2019-01-18a!!!€ daal%^VV2V%^IUML%>er
+!2019-01-18a!!!€ dä0l00%>er
+!2019-01-18a!
+!2019-01-18a!!!$ daal%^VV2V%^IUML%>er
+!2019-01-18a!!!$ da0l00%>er
+!2019-01-18a!
+!2019-01-18a!!! book+N+Pl+Nom: __girji/kirja/book__
+!2019-01-18a!!!€ book%^VV2V%^IUML%>er
+!2019-01-18a!!!€ bö0k00%>er
+!2019-01-18a!
+!2019-01-18a!!!$ book%^VV2V%^IUML%>er
+!2019-01-18a!!!$ bo0k00%>er
+!2019-01-18a!
+!2019-01-18a!!! huus+N+Pl+Nom: __viessu/talo/house__
+!2019-01-18a!!!€ huus%^VV2V%^IUML%>e
+!2019-01-18a!!!€ hü0s00%>e
+!2019-01-18a!
+!2019-01-18a!!!$ huus%^VV2V%^IUML%>e
+!2019-01-18a!!!$ hu0s00%>e
+!2019-01-18a!
+!2019-01-18a!"Double marking of umlaut for graphemes consisting of two different letters, ending in a:ä"
+!2019-01-18a!!! __ @RULENAME@ __
+!2019-01-18a! a:ä <=> [ o: | u: ] _  Cns:* Vow:* Cns:* %^IUML: ;
+!2019-01-18a!
+!2019-01-18a!"Double marking of umlaut for graphemes consisting of two different letters, ending in u:y"
+!2019-01-18a!!! __ @RULENAME@ __
+!2019-01-18a! u:y <=> o: _  Cns:* Vow:* Cns:* %^IUML: ;
+!2019-01-18a!
+!2019-01-18a!"Double marking of umlaut for graphemes consisting of two different letters, ending in u:ü"
+!2019-01-18a!!! __ @RULENAME@ __
+!2019-01-18a! u:ü <=> a: _  Cns:* Vow:* Cns:* %^IUML: ;
+!2019-01-18a!
+!2019-01-18a!!! broak+N+Pl+Nom: __doadjin/katkaisu/break__
+!2019-01-18a!!!€ broak%^IUML%>e
+!2019-01-18a!!!€ bröäk0%>e
+!2019-01-18a!
+!2019-01-18a!!!$ broak%^IUML%>e
+!2019-01-18a!!!$ broak0%>e
+!2019-01-18a!
+!2019-01-18a!!!$ broak%^IUML%>e
+!2019-01-18a!!!$ bröak0%>e
+!2019-01-18a!
+!2019-01-18a!!"Umlaut for ua in Westphalian dialects"
+!2019-01-18a!!! vuagel+N+Pl+Nom: __loddi/lintu/bird__
+!2019-01-18a!!!€ vuagel%^IUML
+!2019-01-18a!!!€ vüägel0
+!2019-01-18a!
+!2019-01-18a!!!$ vuagel%^IUML
+!2019-01-18a!!!$ vuagel0
+!2019-01-18a!
+!2019-01-18a!!!$ vuagel%^IUML
+!2019-01-18a!!!$ vüagel0
+!2019-01-18a!
+!2019-01-18a!!! boum+N+Pl+Nom: __muorra/puu/tree__
+!2019-01-18a!!!€ boum%^IUML%>e
+!2019-01-18a!!!€ böym0%>e
+!2019-01-18a!
+!2019-01-18a!!!$ boum%^IUML%>e
+!2019-01-18a!!!$ boum0%>e
+!2019-01-18a!
+!2019-01-18a!!!$ boum%^IUML%>e
+!2019-01-18a!!!$ böum0%>e
+!2019-01-18a!
+!2019-01-18a!!!$ boum%^IUML%>e
+!2019-01-18a!!!$ böüm0%>e
+!2019-01-18a!
+!2019-01-18a!"U-umlaut  %{aö%}:ö"
+!2019-01-18a!!! __@RULENAME@__ 
+!2019-01-18a!  %{aö%}:ö <=> _ %{0ä%}: Cns:* %^UUML: ;
+!2019-01-18a!
+!2019-01-18a!"Double marking of u-umlaut  %{0ä%}:ä"
+!2019-01-18a!!! __@RULENAME@__ 
+!2019-01-18a! %{0ä%}:ä <=> ö _ Cns:* %^UUML: ;
+!2019-01-18a!
+!2019-01-18a!!! blad+N+Pl+Nom: __lasta/lehti/leaf__
+!2019-01-18a!!!€ bl%{aö%}%{0ä%}d%^UUML%>e
+!2019-01-18a!!!€ blöäd0%>e
+!2019-01-18a!
+!2019-01-18a!!!$ bl%{aö%}%{0ä%}d%^UUML%>e
+!2019-01-18a!!!$ bl%{aö%}%{0ä%}d0%>e
+!2019-01-18a!
+!2019-01-18a!!!$ bl%{aö%}%{0ä%}d%^UUML%>e
+!2019-01-18a!!!$ blö%{0ä%}d0%>e
+!2019-01-18a!
+"Short ablaut grade 1 in class 1  %{eiØ%}:i"
+!! __ @RULENAME@ __
+ %{eiØ%}:i <=> _ %{yaØ%}: Cns %^ABL1S: ;
+
+"Second part %{yaØ%}:0"
+!! __@RULENAME@__ 
+ %{yaØ%}:0 <=> i _ Cns %^ABL1S: ;
+
+!! ryden+V+Ind+Prs+Sg3: __riidet/ratsastaa/ride__
+!!€ r%{eiØ%}%{yaØ%}d%^ABL1S%>t
+!!€ r0id0%>t
+
+"Short ablaut grade 1 in class 2a %{eouü%}:ü"
+!! __ @RULENAME@ __
+ %{eouü%}:ü <=> _ %{0eua%}: Cns %^ABL1S: ;
+
+"Second part %{0eua%}:0"
+!! __@RULENAME@__ 
+ %{0eua%}:0 <=> ü _ Cns %^ABL1S: ;
+
+!! beden+V+Ind+Prs+Sg3: __bivdit/pyytää/ask__
+!!€ b%{eouü%}%{0eua%}d%^ABL1S%>t
+!!€ bü0d0%>t
+
+"Short ablaut grade 1 in class 2b  %{uüo%}:ü"
+!! __ @RULENAME@ __
+ %{uüo%}:ü <=> _ %{uaØ%}: Cns %^ABL1S: ;
+
+"Second part %{uaØ%}:0"
+!! __ @RULENAME@ __
+ %{uaØ%}:0 <=> ü _ Cns %^ABL1S: ;
+
+!! krupen+V+Ind+Prs+Sg3: __čákŋat/ryömiä/creep__
+!!€ kr%{uüo%}%{uaØ%}p%^ABL1S%>t
+!!€ krü0p0%>t
+
+"Short ablaut grade 1 in class 4a %{iaeo%}:i"
+!! __ @RULENAME@ __
+ %{iaeo%}:i <=> _ %{aeØ%}: Cns %^ABL1S: ;
+
+"Short ablaut grade 1 in class 4a %{aeØ%}:0"
+!! __ @RULENAME@ __
+ %{aeØ%}:0 <=> i _ Cns %^ABL1S: ;
+
+!2019-01-18a!!! niamen+V+Ind+Prs+Sg3: __váldit/ottaa/take__
+!2019-01-18a!!!€ n%{iaeo%}%{aeØ%}m%^ABL1S%>t
+!2019-01-18a!!!€ ni0mØ%>t
+!2019-01-18a!
+!2019-01-18a!"Short ablaut grade 1 in class 4b %{eiao%}:i "
+!2019-01-18a!!! __ @RULENAME@ __
+!2019-01-18a! %{eiao%}:i <=> _ %{aeØ%}: Cns %^ABL1S: ;
+!2019-01-18a!
+!2019-01-18a!"Second part %{aeØ%}:0"
+!2019-01-18a!!! __ @RULENAME@ __
+!2019-01-18a! %{aeØ%}:0 <=> i _ Cns %^ABL1S: ;
+!2019-01-18a!
+!2019-01-18a!!! dreapen+V+Ind+Prs+Sg3: __deaivvadit/tavata/meet__
+!2019-01-18a!!!€ dr%{eiao%}%{aeØ%}p%^ABL1S%>t
+!2019-01-18a!!!€ dri0pØ%>t
+!2019-01-18a!
+!2019-01-18a!"Short ablaut grade 1 in class 4c %{eio%}:i"
+!2019-01-18a!!! __ @RULENAME@ __
+!2019-01-18a! %{eio%}:i <=> _ %{a0o%}: Cns %^ABL1S: ;
+!2019-01-18a!
+!2019-01-18a!"Second part %{a0o%}:0"
+!2019-01-18a!!! __ @RULENAME@ __
+!2019-01-18a! %{a0o%}:0 <=> i _ Cns %^ABL1S: ;
+!2019-01-18a!
+!2019-01-18a!!! spreaken+V+Ind+Prs+Sg3: __hupmat/puhua/speak__
+!2019-01-18a!!!€ spr%{eio%}%{a0o%}k%^ABL1S%>t
+!2019-01-18a!!!€ spri0k0%>t
+!2019-01-18a!
+!2019-01-18a!"Short ablaut grade 1 in class 5a %{iae%}:i"
+!2019-01-18a!!! __ @RULENAME@ __
+!2019-01-18a! %{iae%}:i <=> _ %{aeØ%}: Cns %^ABL1S: ;
+!2019-01-18a!
+!2019-01-18a!"Second part %{aeØ%}:0"
+!2019-01-18a!!! __ @RULENAME@ __
+!2019-01-18a! %{aeØ%}:0 <=> i _ Cns %^ABL1S: ;
+!2019-01-18a!
+!2019-01-18a!!! giaven+V+Ind+Prs+Sg3: __addit/antaa/give__
+!2019-01-18a!!!€ g%{iae%}%{aeØ%}v%^ABL1S%>t
+!2019-01-18a!!!€ gi0v0%>t
+!2019-01-18a!
+!2019-01-18a!"Short ablaut grade 1 in class 5b"
+!2019-01-18a!!! __ @RULENAME@ __
+!2019-01-18a! %{eia%}:i <=> _ %{aeØ%}: Cns %^ABL1S: ;
+!2019-01-18a!
+!2019-01-18a!"Second part %{aeØ%}:0"
+!2019-01-18a!!! __ @RULENAME@ __
+!2019-01-18a! %{aeØ%}:0 <=> i _ Cns %^ABL1S: ;
+!2019-01-18a!
+!2019-01-18a!!! steaken+V+Ind+Prs+Sg3: __čugget/pistää/stab__
+!2019-01-18a!!!€ st%{eia%}%{aeØ%}k%^ABL1S%>t
+!2019-01-18a!!!€ sti0k0%>t
+!2019-01-18a!
+!2019-01-18a!"Ablaut grade 2 in class 1 %{eiØ%}:e"
+!2019-01-18a!!! __ @RULENAME@ __
+!2019-01-18a! %{eiØ%}:e <=> _ %{yaØ%}: Cns %^ABL2: ;
+!2019-01-18a!
+!2019-01-18a!"Ablaut grade 2 in class 1 %{yaØ%}:y"
+!2019-01-18a!!! __ @RULENAME@ __
+!2019-01-18a! %{yaØ%}:y <=> e _ Cns %^ABL2: ;
+!2019-01-18a!
+!2019-01-18a!!! ryden+V+Ind+Prt+Sg3: __riidet/ratsastaa/ride__
+!2019-01-18a!!!€ r%{eiØ%}%{yaØ%}d%^ABL2
+!2019-01-18a!!!€ reyd0
+!2019-01-18a!
+!2019-01-18a!!!$ r%{eiØ%}%{yaØ%}d%^ABL2
+!2019-01-18a!!!$ r%{eiØ%}%{yaØ%}d0
+!2019-01-18a!
+!2019-01-18a!!!$ r%{eiØ%}%{yaØ%}d%^ABL2
+!2019-01-18a!!!$ re%{yaØ%}d0
+!2019-01-18a!
+!2019-01-18a!"Ablaut grade 2 in class 2a %{eouü%}:o" 
+!2019-01-18a!!! __ @RULENAME@ __
+!2019-01-18a! %{eouü%}:o <=> _ %{0eua%}: Cns %^ABL2: ;
+!2019-01-18a!
+!2019-01-18a!"Ablaut grade 2 in class 2a %{0eua%}:u" 
+!2019-01-18a!!! __ @RULENAME@ __
+!2019-01-18a! %{0eua%}:u <=> o _ Cns %^ABL2: ;
+!2019-01-18a!
+!2019-01-18a!!! beden+V+Ind+Prt+Sg3: __bivdit/pyytää/ask__
+!2019-01-18a!!!€ b%{eouü%}%{0eua%}d%^ABL2
+!2019-01-18a!!!€ boud0
+!2019-01-18a!
+!2019-01-18a!!!$ b%{eouü%}%{0eua%}d%^ABL2
+!2019-01-18a!!!$ b%{eouü%}%{0eua%}d0
+!2019-01-18a!
+!2019-01-18a!!!$ b%{eouü%}%{0eua%}d%^ABL2
+!2019-01-18a!!!$ bo%{0eua%}d0
+!2019-01-18a!
+!2019-01-18a!"Ablaut grade 2 in class 2b %{uüo%}:o"
+!2019-01-18a!!! __ @RULENAME@ __
+!2019-01-18a! %{uüo%}:o <=> _ %{uaØ%}: Cns %^ABL2: ;
+!2019-01-18a!
+!2019-01-18a!"Ablaut grade 2 in class 2b %{uaØ%}:u"
+!2019-01-18a!!! __ @RULENAME@ __
+!2019-01-18a! %{uaØ%}:u <=> o _ Cns %^ABL2: ;
+!2019-01-18a!
+!2019-01-18a!!! krupen+V+Ind+Prt+Sg3: __čákŋat/ryömiä/creep__
+!2019-01-18a!!!€ kr%{uüo%}%{uaØ%}p%^ABL2
+!2019-01-18a!!!€ kroup0
+!2019-01-18a!
+!2019-01-18a!!!$ kr%{uüo%}%{uaØ%}p%^ABL2
+!2019-01-18a!!!$ kr%{uüo%}%{uaØ%}p0
+!2019-01-18a!
+!2019-01-18a!!!$ kr%{uüo%}%{uaØ%}p%^ABL2
+!2019-01-18a!!!$ kro%{uaØ%}p0
+!2019-01-18a!
+!2019-01-18a!"Ablaut grade 2 in class 3a"
+!2019-01-18a!!! __ @RULENAME@ __
+!2019-01-18a! %{iua%}:u <=> _ Cns Cns %^ABL2: ;
+!2019-01-18a!
+!2019-01-18a!!! drinken+V+Ind+Prt+Sg3: __juhkat/juoda/drink__
+!2019-01-18a!!!€ dr%{iua%}nk%^ABL2
+!2019-01-18a!!!€ drunk0
+!2019-01-18a!
+!2019-01-18a!!!$ dr%{iua%}nk%^ABL2
+!2019-01-18a!!!$ dr%{iua%}nk0
+!2019-01-18a!
+!2019-01-18a!"Ablaut grade 2 in class 3b and 3c"
+!2019-01-18a!!! __ @RULENAME@ __
+!2019-01-18a! %{eoa%}:u <=> _ Cns Cns %^ABL2: ;
+!2019-01-18a!
+!2019-01-18a!!! helpen+V+Ind+Prt+Sg3: __veahkehit/auttaa/help__
+!2019-01-18a!!!€ h%{eoa%}lp%^ABL2
+!2019-01-18a!!!€ holp0
+!2019-01-18a!
+!2019-01-18a!!!$ h%{eoa%}lp%^ABL2
+!2019-01-18a!!!$ h%{eoa%}lp0
+!2019-01-18a!
+!2019-01-18a!"Ablaut grade 2 in class 4a (with generalised old conjunctive for northern and northeastern dialects) %{iaeo%}:a"
+!2019-01-18a!!! __ @RULENAME@ __
+!2019-01-18a! %{iaeo%}:a <=> _ %{aeØ%}: Cns %^ABL2U: ;
+!2019-01-18a!
+!2019-01-18a!"Ablaut grade 2 in class 4a (with generalised old conjunctive for northern and northeastern dialects) %{aeØ%}:e"
+!2019-01-18a!!! __ @RULENAME@ __
+!2019-01-18a! %{aeØ%}:e <=> a _ Cns %^ABL2U: ;
+!2019-01-18a!
+!2019-01-18a!!! niamen+V+Ind+Prt+Sg3: __váldit/ottaa/take__
+!2019-01-18a!!!€ n%{iaeo%}%{aeØ%}m%^ABL2U
+!2019-01-18a!!!€ naem0
+!2019-01-18a!
+!2019-01-18a!!!$ n%{iaeo%}%{aeØ%}m%^ABL2U
+!2019-01-18a!!!$ n%{iaeo%}%{aeØ%}m0
+!2019-01-18a!
+!2019-01-18a!!!$ n%{iaeo%}%{aeØ%}m%^ABL2U
+!2019-01-18a!!!$ na%{aeØ%}m0
+!2019-01-18a!
+!2019-01-18a!"Ablaut grade 2 in class 4b (with generalised old conjunctive for northern and northeastern dialects) %{eiao%}:a"
+!2019-01-18a!!! __ @RULENAME@ __
+!2019-01-18a! %{eiao%}:a <=> _ %{aeØ%}: Cns %^ABL2U: ;
+!2019-01-18a!
+!2019-01-18a!"Ablaut grade 2 in class 4b (with generalised old conjunctive for northern and northeastern dialects) %{aeØ%}:e"
+!2019-01-18a!!! __ @RULENAME@ __
+!2019-01-18a! %{aeØ%}:e <=> i _ Cns %^ABL2U: ;
+!2019-01-18a!
+!2019-01-18a!!! dreapen+V+Ind+Prt+Sg3: __deaivvadit/tavata/meet__
+!2019-01-18a!!!€ dr%{eiao%}%{aeØ%}p%^ABL2U
+!2019-01-18a!!!€ draep0
+!2019-01-18a!
+!2019-01-18a!"Ablaut grade 2 in class 4c %{eio%}:o"
+!2019-01-18a!!! __ @RULENAME@ __
+!2019-01-18a! %{eio%}:o <=> _ %{a0o%}: Cns %^ABL2: ;
+!2019-01-18a!
+!2019-01-18a!"Ablaut grade 2 in class 4c :o"
+!2019-01-18a!!! __ @RULENAME@ __
+!2019-01-18a! %{a0o%}:o <=> o _ Cns %^ABL2: ;
+!2019-01-18a!
+!2019-01-18a!!! spreaken+V+Ind+Prt+Sg3: __hupmat/puhua/speak__
+!2019-01-18a!!!€ spr%{eio%}%{a0o%}k%^ABL2
+!2019-01-18a!!!€ sprook0
+!2019-01-18a!
+!2019-01-18a!"Ablaut grade 2 in class 5a (with generalised old conjunctive for northern and northeastern dialects) :a"
+!2019-01-18a!!! __ @RULENAME@ __
+!2019-01-18a! %{iae%}:a <=> _ %{aeØ%}: Cns %^ABL2U: ;
+!2019-01-18a!
+!2019-01-18a!"Ablaut grade 2 in class 5a (with generalised old conjunctive for northern and northeastern dialects) :e"
+!2019-01-18a!!! __ @RULENAME@ __
+!2019-01-18a! %{aeØ%}:e <=> e _ Cns %^ABL2U: ;
+!2019-01-18a!
+!2019-01-18a!!! giaven+V+Ind+Prt+Sg3: __addit/antaa/give__
+!2019-01-18a!!!€ g%{iae%}%{aeØ%}v%^ABL2U
+!2019-01-18a!!!€ gaevØ%>t
+!2019-01-18a!
+!2019-01-18a!"Ablaut grade 2 in class 5b (with generalised old conjunctive for northern and northeastern dialects) :a"
+!2019-01-18a!!! __ @RULENAME@ __
+!2019-01-18a! %{eia%}:a <=> _ %{aeØ%}: Cns %^ABL2U: ;
+!2019-01-18a!
+!2019-01-18a!"Ablaut grade 2 in class 5b (with generalised old conjunctive for northern and northeastern dialects) :e"
+!2019-01-18a!!! __ @RULENAME@ __
+!2019-01-18a! %{aeØ%}:e <=> a _ Cns %^ABL2U: ;
+!2019-01-18a!
+!2019-01-18a!!! steaken+V+Ind+Prt+Sg3: __čugget/pistää/stab__
+!2019-01-18a!!!€ st%{eia%}%{aeØ%}k%^ABL2U
+!2019-01-18a!!!€ staek0
+!2019-01-18a!
+!2019-01-18a!"Ablaut grade 3 in class 1 :e "
+!2019-01-18a!!! __ @RULENAME@ __
+!2019-01-18a! %{eiØ%}:e <=> _ %{yaØ%}: Cns %^ABL3: ;
+!2019-01-18a!
+!2019-01-18a!
+!2019-01-18a!"Ablaut grade 3 in class 1 :a "
+!2019-01-18a!!! __@RULENAME@__
+!2019-01-18a! %{yaØ%}:a <=> e _ Cns %^ABL3: ;
+!2019-01-18a!
+!2019-01-18a!!! ryden+V+PrfPrc: __riidet/ratsastaa/ride__
+!2019-01-18a!!!€ r%{eiØ%}%{yaØ%}d%^ABL3%>en
+!2019-01-18a!!!€ read0%>en
+!2019-01-18a!
+!2019-01-18a!!!$ r%{eiØ%}%{yaØ%}d%^ABL3%>en
+!2019-01-18a!!!$ r%{eiØ%}%{yaØ%}d0%>en
+!2019-01-18a!
+!2019-01-18a!!!$ r%{eiØ%}%{yaØ%}d%^ABL3%>en
+!2019-01-18a!!!$ re%{yaØ%}d0%>en
+!2019-01-18a!
+!2019-01-18a!"Ablaut grade 3 in class 2a :o" 
+!2019-01-18a!!! __ @RULENAME@ __
+!2019-01-18a! %{eouü%}:o <=> _ %{0eua%}: Cns %^ABL3: ;
+!2019-01-18a!
+!2019-01-18a!"Ablaut grade 3 in class 2a :a" 
+!2019-01-18a!!! __ @RULENAME@ __
+!2019-01-18a! %{0eua%}:a <=> o _ Cns %^ABL3: ;
+!2019-01-18a!
+!2019-01-18a!!! beden+V+Ind+Prt+Sg3: __bivdit/pyytää/ask__
+!2019-01-18a!!!€ b%{eouü%}%{0eua%}d%^ABL3%>en
+!2019-01-18a!!!€ boad0%>en
+!2019-01-18a!
+!2019-01-18a!!!$ b%{eouü%}%{0eua%}d%^ABL3%>en
+!2019-01-18a!!!$ b%{eouü%}%{0eua%}d0%>en
+!2019-01-18a!
+!2019-01-18a!!!$ b%{eouü%}%{0eua%}d%^ABL3%>en
+!2019-01-18a!!!$ bo%{0eua%}d0%>en
+!2019-01-18a!
+!2019-01-18a!"Ablaut grade 3 in class 2b :o"
+!2019-01-18a!!! __ @RULENAME@ __
+!2019-01-18a! %{uüo%}:o <=> _ %{uaØ%}: Cns %^ABL3: ;
+!2019-01-18a!
+!2019-01-18a!"Ablaut grade 3 in class 2b :a "
+!2019-01-18a!!! __ @RULENAME@ __
+!2019-01-18a! %{uaØ%}:a <=> o _ Cns %^ABL3: ;
+!2019-01-18a!
+!2019-01-18a!!! krupen+V+PrfPrc: __čákŋat/ryömiä/creep__
+!2019-01-18a!!!€ kr%{uüo%}%{uaØ%}p%^ABL3%>en
+!2019-01-18a!!!€ kroap0%>en
+!2019-01-18a!
+!2019-01-18a!!!$ kr%{uüo%}%{uaØ%}p%^ABL3%>en
+!2019-01-18a!!!$ kr%{uüo%}%{uaØ%}p0%>en
+!2019-01-18a!
+!2019-01-18a!!!$ kr%{uüo%}%{uaØ%}p%^ABL3%>en
+!2019-01-18a!!!$ kro%{uaØ%}p0%>en
+!2019-01-18a!
+!2019-01-18a!!!$ kr%{uüo%}%{uaØ%}p%^ABL2
+!2019-01-18a!!!$ kro%{uaØ%}p0
+!2019-01-18a!
+!2019-01-18a!"Ablaut grade 3 in class 3a"
+!2019-01-18a!!! __ @RULENAME@ __
+!2019-01-18a! %{iua%}:u <=> _ Cns Cns %^ABL3: ;
+!2019-01-18a!
+!2019-01-18a!!! drinken+V+PrfPrt: __juhkat/juoda/drink__
+!2019-01-18a!!!€ dr%{iua%}nk%^ABL3%>en
+!2019-01-18a!!!€ drunk0%>en
+!2019-01-18a!
+!2019-01-18a!!!$ dr%{iua%}nk%^ABL3%>en
+!2019-01-18a!!!$ dr%{iua%}nk0%>en
+!2019-01-18a!
+!2019-01-18a!"Ablaut grade 3 in class 3b and 3c"
+!2019-01-18a!!! __ @RULENAME@ __
+!2019-01-18a! %{eoa%}:u <=> _ Cns Cns %^ABL2: ;
+!2019-01-18a!
+!2019-01-18a!!! helpen+V+PrfPrt: __veahkehit/auttaa/help__
+!2019-01-18a!!!€ h%{eoa%}lp%^ABL3%>en
+!2019-01-18a!!!€ holp0%>en
+!2019-01-18a!
+!2019-01-18a!!!$ h%{eoa%}lp%^ABL3%>en
+!2019-01-18a!!!$ h%{eoa%}lp0%>en
+!2019-01-18a!
+!2019-01-18a!"Ablaut grade 3 in class 4a"
+!2019-01-18a!!! __ @RULENAME@ __
+!2019-01-18a! %{iaeo%}:o <=> _ %{aeØ%}: Cns %^ABL3: ;
+!2019-01-18a! %{aeØ%}:a <=> o _ Cns %^ABL3: ;
+!2019-01-18a!
+!2019-01-18a!!! niamen+V+PrfPrt: __váldit/ottaa/take__
+!2019-01-18a!!!€ n%{iaeo%}%{aeØ%}m%^ABL3%>en
+!2019-01-18a!!!€ noam0%>en
+!2019-01-18a!
+!2019-01-18a!!!$ n%{iaeo%}%{aeØ%}m%^ABL3%>en
+!2019-01-18a!!!$ n%{iaeo%}%{aeØ%}m0%>en
+!2019-01-18a!
+!2019-01-18a!!!$ n%{iaeo%}%{aeØ%}m%^ABL3%>en
+!2019-01-18a!!!$ na%{aeØ%}m0%>en
+!2019-01-18a!
+!2019-01-18a!"Ablaut grade 3 in class 4b"
+!2019-01-18a!!! __ @RULENAME@ __
+!2019-01-18a! %{eiao%}:o <=> _ %{aeØ%}: Cns %^ABL3: ;
+!2019-01-18a! %{aeØ%}:a <=> o _ Cns %^ABL3: ;
+!2019-01-18a!
+!2019-01-18a!!! dreapen+V+PrfPrt: __deaivvadit/tavata/meet__
+!2019-01-18a!!!€ dr%{eiao%}%{aeØ%}p%^ABL3%>en
+!2019-01-18a!!!€ droap0%>en
+!2019-01-18a!
+!2019-01-18a!!!$ dr%{eiao%}%{aeØ%}p%^ABL3%>en
+!2019-01-18a!!!$ dr%{eiao%}%{aeØ%}p0%>en
+!2019-01-18a!
+!2019-01-18a!!!$ dr%{eiao%}%{aeØ%}p%^ABL3%>en
+!2019-01-18a!!!$ dro%{aeØ%}p0%>en
+!2019-01-18a!
+!2019-01-18a!"Ablaut grade 3 in class 4c"
+!2019-01-18a!!! __ @RULENAME@ __
+!2019-01-18a! %{eio%}:o <=> _ %{a0o%}: Cns %^ABL3: ;
+!2019-01-18a! %{a0o%}:a <=> o _ Cns %^ABL3: ;
+!2019-01-18a!
+!2019-01-18a!!! spreaken+V+PrfPrt: __hupmat/puhua/speak__
+!2019-01-18a!!!€ spr%{eio%}%{a0o%}k%^ABL3%>en
+!2019-01-18a!!!€ sproak0%>en
+!2019-01-18a!
+!2019-01-18a!!!$ spr%{eio%}%{a0o%}k%^ABL3%>en
+!2019-01-18a!!!$ spr%{eio%}%{a0o%}k0%>en
+!2019-01-18a!
+!2019-01-18a!!!$ spr%{eio%}%{a0o%}k%^ABL3%>en
+!2019-01-18a!!!$ spro%{a0o%}k0%>en
+!2019-01-18a!

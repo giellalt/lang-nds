@@ -19,8 +19,50 @@
  
 
 Multichar_Symbols  !!≈ !!!Definitions for @CODE@
+! for the i-umlaut of å and the u-umlaut of a
+%{åöä%} !!≈ * @CODE@
+%{Øäö%} !!≈ * @CODE@
+%{aö%} !!≈ * @CODE@
+%{Øä%} !!≈ * @CODE@
+
+! for the the ablaut grades of the strong verb classes, the ordering of the letters roughly follows the ablaut grades
+! long ablaut grade 1 as default
+%{eiØ%} !! strong verb class 1 1st part
+%{yaØ%} !! strong verb class 1 2nd part
+%{eouü%} !! strong verb class 2a 1st part
+%{Øeua%} !! strong verb class 2a 2nd part
+%{uüØ%} !! strong verb class 2b 1st part
+%{uaØ%} !! strong verb class 2b 2nd part
+%{iua%} !! strong verb class 3a 
+%{eoa%} !! strong verb class 3bc
+%{iaeo%} !! strong verb class 4a 1st part
+%{aeØ%} !! strong verb class 4ab 2nd part
+%{eiao%} !! strong verb class 4b 1st part
+%{eio%} !! strong verb class 4c 1st part
+%{aØo%} !! strong verb class 4c 2nd part 
+%{iae%} !! strong verb class 5a 1st part 
+%{aeØ%} !! strong verb class 5ab 2nd part
+%{eia%} !! strong verb class 5b 1st part
+
+
+!! TRIGGERS
+
 %^CC2C !!≈ * @CODE@  for Deleting second consonant in orthographic geminate
 %^VV2V !!≈ * @CODE@  for Orthographic vowel deletion in open syllable
+%^IUML !!≈ * @CODE@  for i-umlaut
+%^UUML !!≈ * @CODE@  for u-umlaut
+! %^ABL1O  !!≈ * @CODE@  for ablaut grade 1 in open syllable (ablaut grade 1 in closed syllable used as default) -- probably not needed, can be resolved by using %^VV2V
+%^ABL1NL  !!≈ * @CODE@  for non-lengthened ablaut grade 1 in class 4 and 5 in some southern dialects, ABL1 = ablaut grade 1, NL = non-lengthened
+! Historically short vowels in open syllable where lengthened. However, this lengthening did not happen in all instances. Especially in several southern dialects, the short vowel has been preserved, therefore "non-lengthened".
+%^ABL1S  !!≈ * @CODE@  for shortened ablaut grade 1 in 2nd and 3rd sg. of present tense, S = shortened
+! In Middle Low Saxon, the vowel of the 2nd and 3rd sg. was shortened before double consonants. 
+%^ABL2  !!≈ * @CODE@  for ablaut grade 2 in preterite, ABL2 = ablaut grade 2
+%^ABL2W  !!≈ * @CODE@  for specific preterite forms in Westphalian dialects, W = Westphalian
+! Some Westphalian dialects, like those from Eastern Westphalia and the Sauerland, have preserved a vowel distinction between 1st and 3rd sg. vs. 2nd sg. and pl. 
+%^ABL2U  !!≈ * @CODE@  for irregular umlaut of ablaut grade 2 in class 4a,b and 5, U = (irregular) umlaut
+%^ABL3  !!≈ * @CODE@  for long ablaut grade 3 in perfect participle
+%^ABL3NL  !!≈ * @CODE@  for short ablaut grade 3 in some southern dialects, NL = non-lengthened 
+
 
 !! !!Analysis symbols
 !  ----------------
