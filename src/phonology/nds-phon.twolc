@@ -113,7 +113,11 @@ Rules
 
 !!$ tell%^CC2C>d
 !!$ tell0%>d
-		
+
+"Plural assimilation"
+d:n <=> n _ %> Vow ;
+! to be generalised
+
 "I-umlaut for short vowels in closed syllable or long vowels in open syllable"
 !! __@RULENAME@__ 
  Vx:Vy <=> _ Cns:* Vow:* Cns:* %^IUML: ; 
