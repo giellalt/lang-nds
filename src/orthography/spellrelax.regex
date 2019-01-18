@@ -1,3 +1,12 @@
+
+!h -> 0 || [a|e|i|o|u|ä|ö|ü|y] _ [b|c|d|f|g|k|l|m|n|p|r|s|t|v|w|z] [e|i] ; # varen (->) fahren
+!.o.
+a i (->) a e i, # the Netherlands 
+a i (->) a a i, # the Netherlands and Eastern Frisia
+o i (->) o o i, # the Netherlands and Eastern Frisia
+a i (->) e i, 
+a i (->) e i h, # German h marking for length
+e i (->) e i h, # German h marking for length
 á (->) á,
 Á (->) Á,
 đ (->) ð,
@@ -20,8 +29,8 @@ Ö (->) Ø,
 ü (->) u, # Somali
 Ü (->) Ü, # Somali
 ï (->) i, # sma norm
-І (->) I, # Komi cyrillic (->) latin
-і (->) i, # Komi etc
+І (->) I, # Komi Cyrillic (->) Latin
+і (->) i, # Komi etc.
 Ӧ (->) Ö, # Komi
 Ӧ (->) Ö, # Komi
 ӧ (->) ö, # Komi
