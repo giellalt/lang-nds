@@ -20,6 +20,7 @@ kennen:kenn V_TELLEN ;
 passen:pass V_TELLEN ;
 pellen:pell V_TELLEN ;
 stellen:stell V_TELLEN ;
+mellen:mell V_TELLEN ;
 stimmen:stimm V_TELLEN ; ! needs mid-vowel variant
 stimmen:stemm V_TELLEN ;
 tellen:tell V_TELLEN ;
