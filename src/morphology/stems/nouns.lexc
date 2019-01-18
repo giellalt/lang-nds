@@ -3,6 +3,6 @@
 !! No nouns so far
 
 LEXICON Nouns
-noun    Cases   ;
+Land    n1   ;
 
 ! vim: set ft=xfst-lexc:
