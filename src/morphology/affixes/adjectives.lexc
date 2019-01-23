@@ -2,10 +2,16 @@
 !  --------------------
 !! The UNDEFINED language adjectives compare.
 
+LEXICON A_sk
++A: #; ! Hölp!
++A:e #; ! Hölp!
++A+Pl:en #; ! Hölp!
+
+
 LEXICON Comparisons
-+A+pos:0        Cases   ;
-+A+cmp:er       Cases   ;
-+A+sup:est      Cases   ;
++A+Pos:0        Cases   ;
++A+Cmp:er       Cases   ;
++A+Sup:est      Cases   ;
 
 ! vim: set ft=xfst-lexc:
 
