@@ -19,12 +19,16 @@ Tests:
      sakken+V+Ind+Prs+Sg1: sakke
      sakken+V+Ind+Prs+Sg2: sakst
      sakken+V+Ind+Prs+Sg3: sakt
-     sakken+V+Ind+Prs+Pl: [sakket, sakken]
+     sakken+V+Ind+Prs+Pl1: [sakket, sakken]
+     sakken+V+Ind+Prs+Pl2: [sakket, sakken]
+     sakken+V+Ind+Prs+Pl3: [sakket, sakken]
 
      sakken+V+Ind+Prt+Sg1: sakde
      sakken+V+Ind+Prt+Sg2: sakdest
      sakken+V+Ind+Prt+Sg3: sakde
-     sakken+V+Ind+Prt+Pl: sakden
+     sakken+V+Ind+Prt+Pl1: sakden
+     sakken+V+Ind+Prt+Pl2: sakden
+     sakken+V+Ind+Prt+Pl3: sakden
 
      sakken+V+Inf:  sakken
      sakken+V+PrfPrc:  sakked
