@@ -186,6 +186,12 @@ LEXICON Root
 0   Pronouns    ;
 0   Numerals    ;
 0   Prefixes    ;
+0   Prepositions    ;
+
+
+LEXICON PR_
++Pr: #;
+
 
 
 LEXICON ENDLEX

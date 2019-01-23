@@ -1,0 +1,22 @@
+! Prepositions
+
+! We should eventually have syntactic tags here...
+
+
+LEXICON Prepositions
+blangen:blangen PR_ ;
+by:by PR_ ;
+in:in PR_ ;
+med:med PR_ ;
+med:mid PR_ ;
+naar:naar PR_ ;
+oaver:oaver PR_ ;
+oaver:öäver PR_ ;
+twüsken:twüsken PR_ ;
+twüsken:tüsken PR_ ;
+uut:uut PR_ ;
+uut:üüt PR_ ;
+um:um PR_ ;
+um:üm PR_ ;
+van:van PR_ ;
+van:vun PR_ ;

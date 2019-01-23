@@ -5,4 +5,49 @@
 LEXICON Adjectives
 adjective    Comparisons   ;
 
+finsk:finsk A_sk ;
+finsk:finnisk A_sk ;
+neadersassisk:neadersassisk A_sk ;
+neadersassisk:neddersassisk A_sk ;
+sassisk:sassisk A_sk ;
+westgermaansk:westgermaansk A_sk ;
+platdüütsk:platdüütsk A_sk ;
+geldersk:geldersk A_sk ;
+freesk:freesk A_sk ;
+oustpommersk:oustpommersk A_sk ;
+achterhooksk:achterhooksk A_sk ;
+drentsk:drentsk A_sk ;
+zwolsk:zwolsk A_sk ;
+düütsk-sassisk:düütsk-sassisk A_sk ;
+nysassisk:nysassisk A_sk ;
+düütsk:düütsk A_sk ;
+aanaarsamisk:inarisamisk A_sk ;
+aanaarsamisk:aanaarsamisk A_sk ;
+samisk:samisk A_sk ;
+süüdsamisk:süüdsamisk A_sk ;
+ubmejensamisk:ubmejensamisk A_sk ;
+bidumsamisk:bidumsamisk A_sk ;
+julevsamisk:julevsamisk A_sk ;
+noordsamisk:noordsamisk A_sk ;
+skoltsamisk:skoltsamisk A_sk ;
+kiiltsamisk:kiiltsamisk A_sk ;
+tersamisk:tersamisk A_sk ;
+uralisk:uralisk A_sk ;
+uralisk:uraalsk A_sk ;
+finno-ugrisk:finno-ugrisk A_sk ;
+finno-permisk:finno-permisk A_sk ;
+wolgafinnisk:wolgafinnisk A_sk ;
+finno-samisk:finno-samisk A_sk ;
+oustsamisk:oustsamisk A_sk ;
+latynsk:latynsk A_sk ;
+eestnisk:eestnisk A_sk ;
+ungarisk:ungarisk A_sk ;
+ungarisk:hungaarsk A_sk ;
+ungarisk:ungaarsk A_sk ;
+moksjaansk:moksjensk A_sk ;
+moksjaansk:moksjaansk A_sk ;
+europäisk:europäisk A_sk ;
+morfologisk:morfologisk A_sk ;
+
+
 ! vim: set ft=xfst-lexc:

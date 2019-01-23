@@ -43,6 +43,7 @@ studeren:studeer V_VOELEN ;
 töven:tööv V_VOELEN ;
 varen:vaar V_VOELEN ;
 völen:vööl V_VOELEN ;
+vören:vöör V_VOELEN ;
 
 achten:acht V_KOAKEN ; ! check t removal rule
 antwoorden:antwoord V_KOAKEN ;
