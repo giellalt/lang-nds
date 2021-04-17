@@ -64,7 +64,7 @@ Sets
 Rules
 
 "Deleting s before suffix -st"
-!! __ @RULENAME@ __
+!! **@RULENAME@**
  s:0 <=>      _ %> s  ;
 
 !!€ leas%>st
@@ -77,7 +77,7 @@ Rules
 
 
 "Deleting t before suffix -t"
-!! __ @RULENAME@ __
+!! **@RULENAME@**
  t:0 <=>      _ %> t  ;
 
 !!achten+V+Ind+Prs+Sg3: ____
@@ -90,7 +90,7 @@ Rules
    t _ %^CC2C: ;
 
 "Orthographic vowel deletion in open syllable"
-!! __ @RULENAME@ __
+!! **@RULENAME@**
  Vx:0 <=>      Vx _ Cns %^VV2V: ;
         where Vx in (a e o u ä ö ü) ;
 
@@ -102,7 +102,7 @@ Rules
 !!$ maak0%>e
 		
 "Orthographic consonant deletion in closed syllable"
-!! __ @RULENAME@ __
+!! **@RULENAME@**
  Cx:0 <=>      Cx _ %^CC2C: ;
         where Cx in (b d f g k l m n p r v) ;
 !        where Cx in (b d f g k l m n p r s t v) ;
@@ -119,7 +119,7 @@ d:n <=> n _ %> Vow ;
 ! to be generalised
 
 "I-umlaut for short vowels in closed syllable or long vowels in open syllable"
-!! __@RULENAME@__ 
+!! **@RULENAME@** 
  Vx:Vy <=> _ Cns:* Vow:* Cns:* %^IUML: ; 
            Vx:Vy _ Cns:* Vow:* Cns:* %^IUML: ; 
            _ Vx:Vy Cns:* Vow:* Cns:* (%^VV2V:) %^IUML: ;
@@ -127,28 +127,28 @@ d:n <=> n _ %> Vow ;
            Vy in ( ö )
            matched ;
 
-!! holt+N+Pl+Nom: __muorra/puu/wood__
+!! holt+N+Pl+Nom: **muorra/puu/wood**
 !!€ holt%^IUML%>er 
 !!€ hölt0%>er
 
 !!$ holt%^IUML%>er 
 !!$ holt0%>er
 
-!! broder+N+Pl+Nom: __viellja/veli/brother__
+!! broder+N+Pl+Nom: **viellja/veli/brother**
 !!€ broder%^IUML%>s 
 !!€ bröder0%>s
 
 !!$ broder%^IUML%>s 
 !!$ broder0%>s
 
-!! woord+N+Pl+Nom: __sátni/sana/word__
+!! woord+N+Pl+Nom: **sátni/sana/word**
 !!€ woord%^IUML%>e
 !!€ wöörd0%>e
 
 !!$ woord%^IUML%>e
 !!$ woord0%>e
  
-!! vuust+N+Pl+Nom: __čorbma/nyrkki/fist__
+!! vuust+N+Pl+Nom: **čorbma/nyrkki/fist**
 !!€ vuust%^IUML%>e
 !!€ vüüst0%>e 
 
@@ -188,15 +188,15 @@ d:n <=> n _ %> Vow ;
 !2019-01-18a!!!$ vuust0%>e
 
 "I-umlaut for å" 
-!! __@RULENAME@__ 
+!! **@RULENAME@** 
  %{åöä%}:ö <=> _ %{0äö%}: Cns:* %^IUML: ; 
 
 
 "Double marking of i-umlaut for å"
-!! __@RULENAME@__ 
+!! **@RULENAME@** 
  %{0äö%}:ä <=> ö _ Cns:* %^IUML: ;
 
-!! råd+N+Pl+Nom: __ráđđi/neuvo/council__
+!! råd+N+Pl+Nom: **ráđđi/neuvo/council**
 !!€ r%{åöä%}%{0äö%}d%^IUML%>e
 !!€ röäd0%>e
 
@@ -208,21 +208,21 @@ d:n <=> n _ %> Vow ;
 
 !"I-umlaut for long vowel in closed > open syllable"
 
-!! daal+N+Pl+Nom: __leahki/laakso/valley__
+!! daal+N+Pl+Nom: **leahki/laakso/valley**
 !!€ daal%^VV2V%^IUML%>er
 !!€ dä0l00%>er
 
 !!$ daal%^VV2V%^IUML%>er
 !!$ da0l00%>er
 
-!! book+N+Pl+Nom: __girji/kirja/book__
+!! book+N+Pl+Nom: **girji/kirja/book**
 !!€ book%^VV2V%^IUML%>er
 !!€ bö0k00%>er
 
 !!$ book%^VV2V%^IUML%>er
 !!$ bo0k00%>er
 
-!! huus+N+Pl+Nom: __viessu/talo/house__
+!! huus+N+Pl+Nom: **viessu/talo/house**
 !!€ huus%^VV2V%^IUML%>e
 !!€ hü0s00%>e
 
@@ -230,27 +230,27 @@ d:n <=> n _ %> Vow ;
 !!$ hu0s00%>e
 
 "Double marking of umlaut for graphemes consisting of two different letters, ending in a:ä"
-!! __ @RULENAME@ __
+!! **@RULENAME@**
  a:ä <=> [ a: | o: | u: ] _  Cns:+ Vow:* Cns:* %^IUML: ;
      	  [ Cns: | .#. ]  _ Cns:+ Vow:* Cns:* %^IUML: ;
            _ a: Cns:* Vow:* Cns:+ (%^VV2V:) %^IUML: ;
 !           a: _ Cns:* Vow:* Cns:* %^IUML: ;
  
-!! sak+N+Pl+Nom: __seahkka/pussi/bag__
+!! sak+N+Pl+Nom: **seahkka/pussi/bag**
 !!€ sakk%^IUML%>e
 !!€ säkk0%>e
 
 !!$ sakk%^IUML%>e 
 !!$ sakk0%>e 
 
-!! slag+N+Pl+NOM: __časkin/lyönti/hit__
+!! slag+N+Pl+NOM: **časkin/lyönti/hit**
 !!€ slag%^IUML%>e
 !!€ släg0%>e
 
 !!$ slag%^IUML%>e
 !!$ slag0%>e
 
-!! maagd+N+Pl+Nom: __biigá/piika/maid__
+!! maagd+N+Pl+Nom: **biigá/piika/maid**
 !!€ maagd%^IUML%>e
 !!€ määgd0%>e
 
@@ -260,7 +260,7 @@ d:n <=> n _ %> Vow ;
 !!$ maagd%^IUML%>e
 !!$ mäagd0%>e
 
-!! broak+N+Pl+Nom: __doadjin/katkaisu/break__
+!! broak+N+Pl+Nom: **doadjin/katkaisu/break**
 !!€ broak%^IUML%>e
 !!€ bröäk0%>e
 
@@ -273,16 +273,16 @@ d:n <=> n _ %> Vow ;
 
 
 "Double marking of umlaut for graphemes consisting of two different letters, ending in u:y"
-!! __ @RULENAME@ __
+!! **@RULENAME@**
  u:y <=> [Cns: | .#.] o: _  Cns:+ Vow:* Cns:* %^IUML: ;
 
 "Double marking of umlaut for graphemes consisting of two different letters, ending in u:ü"
-!! __ @RULENAME@ __
+!! **@RULENAME@**
  u:ü <=> [ a: | u: ] _  Cns:+ Vow:* Cns:* %^IUML: ;
      	 [Cns: | .#.] _ Cns:+ Vow:* Cns:* %^IUML: ;
            _ u: Cns:+ Vow:* Cns:* (%^VV2V:) %^IUML: ;
 !           u: _ Cns:+ Vow:* Cns:* %^IUML: ;
-!! busk+N+Pl+Nom: __miestta/pensas/bush__
+!! busk+N+Pl+Nom: **miestta/pensas/bush**
 !!€ busk%^IUML%>e 
 !!€ büsk0%>e
 
@@ -334,14 +334,14 @@ d:n <=> n _ %> Vow ;
 !2019-01-18a!!!$ blö%{0ä%}d0%>e
 !2019-01-18a!
 "Short ablaut grade 1 in class 1  %{eiØ%}:i"
-!! __ @RULENAME@ __
+!! **@RULENAME@**
  %{eiØ%}:i <=> _ %{yaØ%}: Cns %^ABL1S: ;
 
 "Second part of short ablaut grade 1 in class 1"
-!! __@RULENAME@__ 
+!! **@RULENAME@** 
  %{yaØ%}:0 <=> %{eiØ%}: _ Cns %^ABL1S: ;
 
-!! ryden+V+Ind+Prs+Sg3: __riidet/ratsastaa/ride__
+!! ryden+V+Ind+Prs+Sg3: **riidet/ratsastaa/ride**
 !!€ r%{eiØ%}%{yaØ%}d%^ABL1S%>t
 !!€ r0id0%>t
 
@@ -352,91 +352,91 @@ d:n <=> n _ %> Vow ;
 !!$ r%{eiØ%}%{yaØ%}d0%>t
 
 "Short ablaut grade 1 in class 2a %{eouü%}:ü"
-!! __ @RULENAME@ __
+!! **@RULENAME@**
  %{eouü%}:ü <=> _ %{Øeua%}: Cns %^ABL1S: ;
 
 "Second part of short ablaut grade 1 in class 2a"
-!! __@RULENAME@__ 
+!! **@RULENAME@** 
  %{Øeua%}:0 <=> %{eouü%}: _ Cns %^ABL1S: ;
 
-!! beden+V+Ind+Prs+Sg3: __bivdit/pyytää/ask__
+!! beden+V+Ind+Prs+Sg3: **bivdit/pyytää/ask**
 !!€ b%{eouü%}%{Øeua%}d%^ABL1S%>t
 !!€ bü0d0%>t
 
 "Short ablaut grade 1 in class 2b  %{uüo%}:ü"
-!! __ @RULENAME@ __
+!! **@RULENAME@**
  %{uüo%}:ü <=> _ %{uaØ%}: Cns %^ABL1S: ;
 
 "Second part of short ablaut grade 1 in class 2b"
-!! __ @RULENAME@ __
+!! **@RULENAME@**
  %{uaØ%}:0 <=> %{uüo%}: _ Cns %^ABL1S: ;
 
-!! krupen+V+Ind+Prs+Sg3: __čákŋat/ryömiä/creep__
+!! krupen+V+Ind+Prs+Sg3: **čákŋat/ryömiä/creep**
 !!€ kr%{uüo%}%{uaØ%}p%^ABL1S%>t
 !!€ krü0p0%>t
 
 "Short ablaut grade 1 in class 4a %{iaeo%}:i"
-!! __ @RULENAME@ __
+!! **@RULENAME@**
  %{iaeo%}:i <=> _ %{aeØ%}: Cns %^ABL1S: ;
 
 "Second part of short ablaut grade 1 in class 4a+b and 5a+b"
-!! __ @RULENAME@ __
+!! **@RULENAME@**
  %{aeØ%}:0 <=> %{iaeo%}: _ Cns %^ABL1S: ;
                %{eiao%}: _ Cns %^ABL1S: ;
                %{iae%}: _ Cns %^ABL1S: ;
                %{eia%}: _ Cns %^ABL1S: ;
 
-!! niamen+V+Ind+Prs+Sg3: __váldit/ottaa/take__
+!! niamen+V+Ind+Prs+Sg3: **váldit/ottaa/take**
 !!€ n%{iaeo%}%{aeØ%}m%^ABL1S%>t
 !!€ ni0mØ%>t
 
 "Short ablaut grade 1 in class 4b %{eiao%}:i "
-!! __ @RULENAME@ __
+!! **@RULENAME@**
  %{eiao%}:i <=> _ %{aeØ%}: Cns %^ABL1S: ;
 
-!! dreapen+V+Ind+Prs+Sg3: __deaivvadit/tavata/meet__
+!! dreapen+V+Ind+Prs+Sg3: **deaivvadit/tavata/meet**
 !!€ dr%{eiao%}%{aeØ%}p%^ABL1S%>t
 !!€ dri0pØ%>t
 
 "Short ablaut grade 1 in class 4c %{eio%}:i"
-!! __ @RULENAME@ __
+!! **@RULENAME@**
  %{eio%}:i <=> _ %{aØo%}: Cns %^ABL1S: ;
 
 "Second part of short ablaut grade 1 in class 4c"
-!! __ @RULENAME@ __
+!! **@RULENAME@**
  %{aØo%}:0 <=> %{eio%}: _ Cns %^ABL1S: ;
 
-!! spreaken+V+Ind+Prs+Sg3: __hupmat/puhua/speak__
+!! spreaken+V+Ind+Prs+Sg3: **hupmat/puhua/speak**
 !!€ spr%{eio%}%{aØo%}k%^ABL1S%>t
 !!€ spri0k0%>t
 
 "Short ablaut grade 1 in class 5a %{iae%}:i"
-!! __ @RULENAME@ __
+!! **@RULENAME@**
  %{iae%}:i <=> _ %{aeØ%}: Cns %^ABL1S: ;
 
 
-!! giaven+V+Ind+Prs+Sg3: __addit/antaa/give__
+!! giaven+V+Ind+Prs+Sg3: **addit/antaa/give**
 !!€ g%{iae%}%{aeØ%}v%^ABL1S%>t
 !!€ gi0v0%>t
 
 "Short ablaut grade 1 in class 5b"
-!! __ @RULENAME@ __
+!! **@RULENAME@**
  %{eia%}:i <=> _ %{aeØ%}: Cns %^ABL1S: ;
 
-!! steaken+V+Ind+Prs+Sg3: __čugget/pistää/stab__
+!! steaken+V+Ind+Prs+Sg3: **čugget/pistää/stab**
 !!€ st%{eia%}%{aeØ%}k%^ABL1S%>t
 !!€ sti0k0%>t
 
 "Ablaut grade 2 and 3 in class 1 %{eiØ%}:e"
-!! __ @RULENAME@ __
+!! **@RULENAME@**
  %{eiØ%}:e <=> _ %{yaØ%}: Cns %^ABL2: ;
 
                _ %{yaØ%}: Cns %^ABL3: ;
 "Second part of ablaut grade 2 in class 1"
-!! __ @RULENAME@ __
+!! **@RULENAME@**
  %{yaØ%}:y <=> %{eiØ%}: _ Cns %^ABL2: ;
 
-!! ryden+V+Ind+Prt+Sg3: __riidet/ratsastaa/ride__
+!! ryden+V+Ind+Prt+Sg3: **riidet/ratsastaa/ride**
 !!€ r%{eiØ%}%{yaØ%}d%^ABL2
 !!€ reyd0
 
@@ -447,15 +447,15 @@ d:n <=> n _ %> Vow ;
 !!$ re%{yaØ%}d0
 
 "Ablaut grade 2 and 3 in class 2a" 
-!! __ @RULENAME@ __
+!! **@RULENAME@**
  %{eouü%}:o <=> _ %{Øeua%}: Cns %^ABL2: ;
                 _ %{Øeua%}: Cns %^ABL3: ;
 
 "Second part of ablaut grade 2 in class 2a" 
-!! __ @RULENAME@ __
+!! **@RULENAME@**
  %{Øeua%}:u <=> %{eouü%}: _ Cns %^ABL2: ;
 
-!! beden+V+Ind+Prt+Sg3: __bivdit/pyytää/ask__
+!! beden+V+Ind+Prt+Sg3: **bivdit/pyytää/ask**
 !!€ b%{eouü%}%{Øeua%}d%^ABL2
 !!€ boud0
 
@@ -466,15 +466,15 @@ d:n <=> n _ %> Vow ;
 !!$ bo%{Øeua%}d0
 
 "Ablaut grade 2 and 3 in class 2b"
-!! __ @RULENAME@ __
+!! **@RULENAME@**
  %{uüo%}:o <=> _ %{uaØ%}: Cns %^ABL2: ;
                _ %{uaØ%}: Cns %^ABL3: ;
 
 "Second part of ablaut grade 2 in class 2b"
-!! __ @RULENAME@ __
+!! **@RULENAME@**
  %{uaØ%}:u <=> %{uüo%}: _ Cns %^ABL2: ;
 
-!! krupen+V+Ind+Prt+Sg3: __čákŋat/ryömiä/creep__
+!! krupen+V+Ind+Prt+Sg3: **čákŋat/ryömiä/creep**
 !!€ kr%{uüo%}%{uaØ%}p%^ABL2
 !!€ kroup0
 
@@ -485,18 +485,18 @@ d:n <=> n _ %> Vow ;
 !!$ kro%{uaØ%}p0
 
 "Ablaut grade 2 and 3 in class 3a"
-!! __ @RULENAME@ __
+!! **@RULENAME@**
  %{iua%}:u <=> _ Cns Cns %^ABL2: ;
                _ Cns Cns %^ABL3: ;
 
-!! drinken+V+Ind+Prt+Sg3: __juhkat/juoda/drink__
+!! drinken+V+Ind+Prt+Sg3: **juhkat/juoda/drink**
 !!€ dr%{iua%}nk%^ABL2
 !!€ drunk0
 
 !!$ dr%{iua%}nk%^ABL2
 !!$ dr%{iua%}nk0
 
-!! drinken+V+PrfPrt: __juhkat/juoda/drink__
+!! drinken+V+PrfPrt: **juhkat/juoda/drink**
 !!€ dr%{iua%}nk%^ABL3%>en
 !!€ drunk0%>en
 
@@ -504,18 +504,18 @@ d:n <=> n _ %> Vow ;
 !!$ dr%{iua%}nk0%>en
 
 "Ablaut grade 2 and 3 in class 3b and 3c"
-!! __ @RULENAME@ __
+!! **@RULENAME@**
  %{eoa%}:u <=> _ Cns Cns %^ABL2: ;
                _ Cns Cns %^ABL3: ;
 
-!! helpen+V+Ind+Prt+Sg3: __veahkehit/auttaa/help__
+!! helpen+V+Ind+Prt+Sg3: **veahkehit/auttaa/help**
 !!€ h%{eoa%}lp%^ABL2
 !!€ holp0
 
 !!$ h%{eoa%}lp%^ABL2
 !!$ h%{eoa%}lp0
 
-!! helpen+V+PrfPrt: __veahkehit/auttaa/help__
+!! helpen+V+PrfPrt: **veahkehit/auttaa/help**
 !!€ h%{eoa%}lp%^ABL3%>en
 !!€ holp0%>en
 
@@ -523,16 +523,16 @@ d:n <=> n _ %> Vow ;
 !!$ h%{eoa%}lp0%>en
 
 "Ablaut grade 2 in class 4a (with generalised old conjunctive for northern and northeastern dialects)"
-!! __ @RULENAME@ __
+!! **@RULENAME@**
  %{iaeo%}:a <=> _ %{aeØ%}: Cns %^ABL2U: ;
 "Second part of ablaut grade 2 in class 4a+b+c and 5a+b (with generalised old conjunctive for northern and northeastern dialects)"
-!! __ @RULENAME@ __
+!! **@RULENAME@**
  %{aeØ%}:e <=> %{iaeo%}: _ Cns %^ABL2U: ;
                %{eiao%}: _ Cns %^ABL2U: ;
                %{iae%}: _ Cns %^ABL2U: ;
                %{eia%}: _ Cns %^ABL2U: ;
 
-!! niamen+V+Ind+Prt+Sg3: __váldit/ottaa/take__
+!! niamen+V+Ind+Prt+Sg3: **váldit/ottaa/take**
 !!€ n%{iaeo%}%{aeØ%}m%^ABL2U
 !!€ naem0
 
@@ -543,47 +543,47 @@ d:n <=> n _ %> Vow ;
 !!$ na%{aeØ%}m0
 
 "Ablaut grade 2 in class 4b (with generalised old conjunctive for northern and northeastern dialects)"
-!! __ @RULENAME@ __
+!! **@RULENAME@**
  %{eiao%}:a <=> _ %{aeØ%}: Cns %^ABL2U: ;
 
-!! dreapen+V+Ind+Prt+Sg3: __deaivvadit/tavata/meet__
+!! dreapen+V+Ind+Prt+Sg3: **deaivvadit/tavata/meet**
 !!€ dr%{eiao%}%{aeØ%}p%^ABL2U
 !!€ draep0
 
 
 "Ablaut grade 2 and 3 in class 4c"
-!! __ @RULENAME@ __
+!! **@RULENAME@**
  %{eio%}:o <=> _ %{aØo%}: Cns %^ABL2: ;
                _ %{aØo%}: Cns %^ABL3: ;
 "Second part of ablaut grade 2 in class 4c"
-!! __ @RULENAME@ __
+!! **@RULENAME@**
  %{aØo%}:o <=> %{eio%}: _ Cns %^ABL2: ;
 
-!! spreaken+V+Ind+Prt+Sg3: __hupmat/puhua/speak__
+!! spreaken+V+Ind+Prt+Sg3: **hupmat/puhua/speak**
 !!€ spr%{eio%}%{aØo%}k%^ABL2
 !!€ sprook0
 
 "Ablaut grade 2 in class 5a (with generalised old conjunctive for northern and northeastern dialects)"
-!! __ @RULENAME@ __
+!! **@RULENAME@**
  %{iae%}:a <=> _ %{aeØ%}: Cns %^ABL2U: ;
 
-!! giaven+V+Ind+Prt+Sg3: __addit/antaa/give__
+!! giaven+V+Ind+Prt+Sg3: **addit/antaa/give**
 !!€ g%{iae%}%{aeØ%}v%^ABL2U
 !!€ gaev0%>t
 
 "Ablaut grade 2 in class 5b (with generalised old conjunctive for northern and northeastern dialects)"
-!! __ @RULENAME@ __
+!! **@RULENAME@**
  %{eia%}:a <=> _ %{aeØ%}: Cns %^ABL2U: ;
 
-!! steaken+V+Ind+Prt+Sg3: __čugget/pistää/stab__
+!! steaken+V+Ind+Prt+Sg3: **čugget/pistää/stab**
 !!€ st%{eia%}%{aeØ%}k%^ABL2U
 !!€ staek0
 
 "Second part of ablaut grade 3 in class 1"
-!! __ @RULENAME@ __
+!! **@RULENAME@**
  %{yaØ%}:a <=> %{eiØ%}: _ Cns %^ABL3: ;
 
-!! ryden+V+PrfPrc: __riidet/ratsastaa/ride__
+!! ryden+V+PrfPrc: **riidet/ratsastaa/ride**
 !!€ r%{eiØ%}%{yaØ%}d%^ABL3%>en
 !!€ read0%>en
 
@@ -594,10 +594,10 @@ d:n <=> n _ %> Vow ;
 !!$ re%{yaØ%}d0%>en
 
 "Second part of ablaut grade 3 in class 2a" 
-!! __ @RULENAME@ __
+!! **@RULENAME@**
  %{Øeua%}:a <=> %{eouü%}: _ Cns %^ABL3: ;
 
-!! beden+V+Ind+Prt+Sg3: __bivdit/pyytää/ask__
+!! beden+V+Ind+Prt+Sg3: **bivdit/pyytää/ask**
 !!€ b%{eouü%}%{Øeua%}d%^ABL3%>en
 !!€ boad0%>en
 
@@ -608,10 +608,10 @@ d:n <=> n _ %> Vow ;
 !!$ bo%{Øeua%}d0%>en
 
 "Second part of ablaut grade 3 in class 2b"
-!! __ @RULENAME@ __
+!! **@RULENAME@**
  %{uaØ%}:a <=> %{uüo%}: _ Cns %^ABL3: ;
 
-!! krupen+V+PrfPrc: __čákŋat/ryömiä/creep__
+!! krupen+V+PrfPrc: **čákŋat/ryömiä/creep**
 !!€ kr%{uüo%}%{uaØ%}p%^ABL3%>en
 !!€ kroap0%>en
 
@@ -647,15 +647,15 @@ d:n <=> n _ %> Vow ;
 !2019-01-18a!!!$ h%{eoa%}lp0%>en
 
 "Ablaut grade 3 in class 4a+b"
-!! __ @RULENAME@ __
+!! **@RULENAME@**
  %{iaeo%}:o <=> _ %{aeØ%}: Cns %^ABL3: ;
 
 "Second part of ablaut grade 3 in class 4a"
-!! __ @RULENAME@ __
+!! **@RULENAME@**
  %{aeØ%}:a <=> %{iaeo%}: _ Cns %^ABL3: ;
                %{eiao%}: _ Cns %^ABL3: ;
 
-!! niamen+V+PrfPrt: __váldit/ottaa/take__
+!! niamen+V+PrfPrt: **váldit/ottaa/take**
 !!€ n%{iaeo%}%{aeØ%}m%^ABL3%>en
 !!€ noam0%>en
 
@@ -666,10 +666,10 @@ d:n <=> n _ %> Vow ;
 !!$ na%{aeØ%}m0%>en
 
 "Ablaut grade 3 in class 4b"
-!! __ @RULENAME@ __
+!! **@RULENAME@**
  %{eiao%}:o <=> _ %{aeØ%}: Cns %^ABL3: ;
 
-!! dreapen+V+PrfPrt: __deaivvadit/tavata/meet__
+!! dreapen+V+PrfPrt: **deaivvadit/tavata/meet**
 !!€ dr%{eiao%}%{aeØ%}p%^ABL3%>en
 !!€ droap0%>en
 
@@ -680,10 +680,10 @@ d:n <=> n _ %> Vow ;
 !!$ dro%{aeØ%}p0%>en
 
 "Second part of ablaut grade 3 in class 4c"
-!! __ @RULENAME@ __
+!! **@RULENAME@**
  %{aØo%}:a <=> %{eio%}: _ Cns %^ABL3: ;
 
-!! spreaken+V+PrfPrt: __hupmat/puhua/speak__
+!! spreaken+V+PrfPrt: **hupmat/puhua/speak**
 !!€ spr%{eio%}%{aØo%}k%^ABL3%>en
 !!€ sproak0%>en
 
