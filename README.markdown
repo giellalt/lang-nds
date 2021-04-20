@@ -10,7 +10,8 @@ authors named in the AUTHORS file are available to grant other licencing
 choices.
 
 [![GitHub issues](https://img.shields.io/github/issues-raw/giellalt/lang-nds)](https://github.com/giellalt/lang-nds/issues)
- [![Build Status](https://github.com/giellalt/lang-nds/workflows/Build%20Speller%20Archives%20and%20Bundles/badge.svg)](https://github.com/giellalt/lang-nds/actions)
+[![Build Status](https://github.com/giellalt/lang-nds/workflows/Build%20Speller%20Archives%20and%20Bundles/badge.svg)](https://github.com/giellalt/lang-nds/actions)
+[![License](https://img.shields.io/github/license/giellalt/template-lang-nds)](https://raw.githubusercontent.com/giellalt/lang-nds/develop/LICENSE)
 
 Install proofing tools and [keyboards](https://github.com/giellalt/keyboard-nds)
 for the Low German language by using the [Divvun Installer](http://divvun.no)
