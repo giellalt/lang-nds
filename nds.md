@@ -1,128 +1,60 @@
-Noun inflection
-The Low German language nouns inflect in cases.
+Nouns
+No nouns so far
 
 
+Numerals
+No numerals so far
 
 
+Verbs
+So far only a couple of verbs
 
-Proper noun inflection
-The Low German language proper nouns inflect in the same cases as regular
-nouns, but with a colon (':') as separator.
 
 
 
 
-# Symbol affixes
 
 
 
+Strong verbs 
 
+Class I
 
-Adjective inflection
-The Low German language adjectives compare.
 
+Class II 
 
 
 
+Class III
 
-Verb inflection
-The LOW SAXON language verbs inflect in persons. So far only for northwestern dialects.
 
-tellen:tell
- Orthographic variation in consonant length
 
 
 
 
-maken:maak
-Orthographic variation in marking of long vowels, perfect participle '-ed'
 
+Class IV
 
 
 
+Class V
 
 
-völen:vööl
-Orthographic variation in marking of long vowels, perfect participle '-d'
 
 
+Prefixes
+No prefixes so far
 
 
 
+Adjectives
+No adjectives so far
 
-koaken:koak
-No orthographic variation in marking of long vowels or consonants, perfect participle '-ed'
 
 
 
-
-
-
-waien:wai
-No orthographic variation in marking of long vowels or consonants, perfect participle '-d'
-
-
-
-
-
-
-sakken:sakk
- Orthographic variation in consonant length, perfect participle '-ed'
-
-
-
-
-
-
-ryden:r%{ei0%}%{ya0%}d
-Strong verb class 1, 4c
-
-
-
-
-
-
-beden:b%{eouü%}%{0eua%}d
-Strong verb class 2
-
-
-
-
-
-
-drinken:dr%{iua%}nk
-Strong verb class 3
-
-
-
-
-
-winnen:w%{iua%}nn
-Strong verb class 3, stem ending with two identical consonants
-
-
-
-
-
-
-niamen:n%{iaeo%}%{ae0%}m
-Strong verb class 4a,b
-
-
-
-
-
-
-steaken:st%{eia%}%{ae0%}k
-Strong verb class 5
-
-
-
-
-
-
-
-
+Pronouns
+No pronouns so far.
 
 
 ================================================== !
@@ -580,6 +512,133 @@ spreaken+V+PrfPrt: **hupmat/puhua/speak**
 * ★*spr%{eio%}%{aØo%}k%^ABL3%>en* (is not standard language)
 * ★*spro%{aØo%}k0%>en* (is not standard language)
 
+# Symbol affixes
+
+
+
+
+
+Noun inflection
+The Low German language nouns inflect in cases.
+
+
+
+
+
+Proper noun inflection
+The Low German language proper nouns inflect in the same cases as regular
+nouns, but with a colon (':') as separator.
+
+
+
+Verb inflection
+The LOW SAXON language verbs inflect in persons. So far only for northwestern dialects.
+
+tellen:tell
+ Orthographic variation in consonant length
+
+
+
+
+maken:maak
+Orthographic variation in marking of long vowels, perfect participle '-ed'
+
+
+
+
+
+
+völen:vööl
+Orthographic variation in marking of long vowels, perfect participle '-d'
+
+
+
+
+
+
+koaken:koak
+No orthographic variation in marking of long vowels or consonants, perfect participle '-ed'
+
+
+
+
+
+
+waien:wai
+No orthographic variation in marking of long vowels or consonants, perfect participle '-d'
+
+
+
+
+
+
+sakken:sakk
+ Orthographic variation in consonant length, perfect participle '-ed'
+
+
+
+
+
+
+ryden:r%{ei0%}%{ya0%}d
+Strong verb class 1, 4c
+
+
+
+
+
+
+beden:b%{eouü%}%{0eua%}d
+Strong verb class 2
+
+
+
+
+
+
+drinken:dr%{iua%}nk
+Strong verb class 3
+
+
+
+
+
+winnen:w%{iua%}nn
+Strong verb class 3, stem ending with two identical consonants
+
+
+
+
+
+
+niamen:n%{iaeo%}%{ae0%}m
+Strong verb class 4a,b
+
+
+
+
+
+
+steaken:st%{eia%}%{ae0%}k
+Strong verb class 5
+
+
+
+
+
+
+
+
+
+
+Adjective inflection
+The Low German language adjectives compare.
+
+
+
+
+
+
 INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Low German LANGUAGE.
 
 
@@ -701,63 +760,20 @@ word classes, or optionally from prefixes:
 
 
 
-Nouns
-No nouns so far
-
-
-Prefixes
-No prefixes so far
 
 
 
-Pronouns
-No pronouns so far.
+We describe here how abbreviations are in Low German are read out, e.g.
+for text-to-speech systems.
 
+For example:
 
-Adjectives
-No adjectives so far
-
-
-
-
-Verbs
-So far only a couple of verbs
-
-
-
-
-
-
-
-
-Strong verbs 
-
-Class I
-
-
-Class II 
-
-
-
-Class III
-
-
-
-
-
-
-
-Class IV
-
-
-
-Class V
-
-
-
-
-Numerals
-No numerals so far
+ * s.:syntynyt # ;  
+ * os.:omaa% sukua # ;  
+ * v.:vuosi # ;  
+ * v.:vuonna # ;  
+ * esim.:esimerkki # ; 
+ * esim.:esimerkiksi # ; 
 
 
 
@@ -813,20 +829,4 @@ No numerals so far
 % kolon% :%:     Root ;
 % sárggis% :%-   Root ; 
 % násti% :%*     Root ; 
-
-
-
-
-We describe here how abbreviations are in Low German are read out, e.g.
-for text-to-speech systems.
-
-For example:
-
- * s.:syntynyt # ;  
- * os.:omaa% sukua # ;  
- * v.:vuosi # ;  
- * v.:vuonna # ;  
- * esim.:esimerkki # ; 
- * esim.:esimerkiksi # ; 
-
 
