@@ -1,6 +1,8 @@
 !! ================================================== !
-!! The Low German morphophonological/twolc rules file !
+!! The Low German morphophonological/twolc rules file 
 !! ================================================== !
+
+!! This file documents the [phonology.twolc file](http://github.com/giellalt/lang-nds/blob/main/src/fst/phonology.twolc) 
 
 Alphabet
  a b c d e f g h i j k l m n o p q r s t u v w x y z æ ø å
