@@ -733,8 +733,10 @@ The Low German language nouns inflect in cases.
 
 
 ================================================== !
-The Low German morphophonological/twolc rules file !
+The Low German morphophonological/twolc rules file 
 ================================================== !
+
+This file documents the [phonology.twolc file](http://github.com/giellalt/lang-nds/blob/main/src/fst/phonology.twolc) 
 
 
 
