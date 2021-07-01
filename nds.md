@@ -199,7 +199,7 @@
 * Sets for verbs
 
 
-    - V is all readings with a V tag in them, REAL-V should
+- V is all readings with a V tag in them, REAL-V should
 be the ones without an N tag following the V.  
 The REAL-V set thus awaits a fix to the preprocess V ... N bug.
 
@@ -605,11 +605,166 @@ These were the set types.
 
 
 
-Verb inflection
+* * *
+<small>This (part of) documentation was generated from [../src/cg3/functions.cg3](http://github.com/giellalt/lang-nds/blob/main/../src/cg3/functions.cg3)</small>
+INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Low German LANGUAGE.
+
+
+ # Definitions for Multichar_Symbols
+ * %{åöä%}
+ * %{Øäö%}
+ * %{aö%}
+ * %{Øä%}
+
+strong verb class 1 1st part
+strong verb class 1 2nd part
+strong verb class 2a 1st part
+strong verb class 2a 2nd part
+strong verb class 2b 1st part
+strong verb class 2b 2nd part
+strong verb class 3a 
+strong verb class 3bc
+strong verb class 4a 1st part
+strong verb class 4ab 2nd part
+strong verb class 4b 1st part
+strong verb class 4c 1st part
+strong verb class 4c 2nd part 
+strong verb class 5a 1st part 
+strong verb class 5ab 2nd part
+strong verb class 5b 1st part
+
+
+TRIGGERS
+
+ * %^CC2C  for Deleting second consonant in orthographic geminate
+ * %^VV2V  for Orthographic vowel deletion in open syllable
+ * %^IUML  for i-umlaut
+ * %^UUML  for u-umlaut
+ * %^ABL1NL  for non-lengthened ablaut grade 1 in class 4 and 5 in some southern dialects, ABL1 = ablaut grade 1, NL = non-lengthened
+ * %^ABL1S  for shortened ablaut grade 1 in 2nd and 3rd sg. of present tense, S = shortened
+ * %^ABL2  for ablaut grade 2 in preterite, ABL2 = ablaut grade 2
+ * %^ABL2W  for specific preterite forms in Westphalian dialects, W = Westphalian
+ * %^ABL2U  for irregular umlaut of ablaut grade 2 in class 4a,b and 5, U = (irregular) umlaut
+ * %^ABL3  for long ablaut grade 3 in perfect participle
+ * %^ABL3NL  for short ablaut grade 3 in some southern dialects, NL = non-lengthened 
+
+
+## Analysis symbols
+The morphological analyses of wordforms for the Low German
+language are presented in this system in terms of the following symbols.
+(It is highly suggested to follow existing standards when adding new tags).
+
+The parts-of-speech are:
+
+The parts of speech are further split up into:
+
+The Usage extents are marked using following tags:
+
+The nominals are inflected in the following Case and Number
+
+The possession is marked as such:
+The comparative forms are:
+Numerals are classified under:
+Verb moods are:
+Verb personal forms are:
+Other verb forms are
+
+ * +Symbol = independent symbols in the text stream, like £, €, ©
+Special symbols are classified with:
+The verbs are syntactically split according to transitivity:
+Special multiword units are analysed with:
+Non-dictionary words can be recognised with:
+
+Question and Focus particles:
+
+
+Semantics are classified with
+
+
+Derivations are classified under the morphophonetic form of the suffix, the
+source and target part-of-speech.
+
+
+Morphophonology
+To represent phonologic variations in word forms we use the following
+symbols in the lexicon files:
+
+And following triggers to control variation
+
+## Flag diacritics
+We have manually optimised the structure of our lexicon using following
+flag diacritics to restrict morhpological combinatorics - only allow compounds
+with verbs if the verb is further derived into a noun again:
+ |  @P.NeedNoun.ON@ | (Dis)allow compounds with verbs unless nominalised
+ |  @D.NeedNoun.ON@ | (Dis)allow compounds with verbs unless nominalised
+ |  @C.NeedNoun@ | (Dis)allow compounds with verbs unless nominalised
+
+For languages that allow compounding, the following flag diacritics are needed
+to control position-based compounding restrictions for nominals. Their use is
+handled automatically if combined with +CmpN/xxx tags. If not used, they will
+do no harm.
+ |  @P.CmpFrst.FALSE@ | Require that words tagged as such only appear first
+ |  @D.CmpPref.TRUE@ | Block such words from entering ENDLEX
+ |  @P.CmpPref.FALSE@ | Block these words from making further compounds
+ |  @D.CmpLast.TRUE@ | Block such words from entering R
+ |  @D.CmpNone.TRUE@ | Combines with the next tag to prohibit compounding
+ |  @U.CmpNone.FALSE@ | Combines with the prev tag to prohibit compounding
+ |  @P.CmpOnly.TRUE@ | Sets a flag to indicate that the word has passed R
+ |  @D.CmpOnly.FALSE@ | Disallow words coming directly from root.
+
+Use the following flag diacritics to control downcasing of derived proper
+nouns (e.g. Finnish Pariisi -> pariisilainen). See e.g. North Sámi for how to use
+these flags. There exists a ready-made regex that will do the actual down-casing
+given the proper use of these flags.
+ |  @U.Cap.Obl@ | Allowing downcasing of derived names: deatnulasj.
+ |  @U.Cap.Opt@ | Allowing downcasing of derived names: deatnulasj.
+
+The word forms in Low German language start from the lexeme roots of basic
+word classes, or optionally from prefixes:
+
+
+
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/root.lexc](http://github.com/giellalt/lang-nds/blob/main/../src/fst/root.lexc)</small>Proper noun inflection
+The Low German language proper nouns inflect in the same cases as regular
+nouns, but with a colon (':') as separator.
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/affixes/propernouns.lexc](http://github.com/giellalt/lang-nds/blob/main/../src/fst/affixes/propernouns.lexc)</small>Noun inflection
+The Low German language nouns inflect in cases.
+
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/affixes/nouns.lexc](http://github.com/giellalt/lang-nds/blob/main/../src/fst/affixes/nouns.lexc)</small>
+# Symbol affixes
+
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/affixes/symbols.lexc](http://github.com/giellalt/lang-nds/blob/main/../src/fst/affixes/symbols.lexc)</small>Adjective inflection
+The Low German language adjectives compare.
+
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/affixes/adjectives.lexc](http://github.com/giellalt/lang-nds/blob/main/../src/fst/affixes/adjectives.lexc)</small>Verb inflection
 The LOW SAXON language verbs inflect in persons. So far only for northwestern dialects.
 
 tellen:tell
- Orthographic variation in consonant length
+Orthographic variation in consonant length
 
 
 
@@ -647,7 +802,7 @@ No orthographic variation in marking of long vowels or consonants, perfect parti
 
 
 sakken:sakk
- Orthographic variation in consonant length, perfect participle '-ed'
+Orthographic variation in consonant length, perfect participle '-ed'
 
 
 
@@ -705,34 +860,73 @@ Strong verb class 5
 
 
 
-Proper noun inflection
-The Low German language proper nouns inflect in the same cases as regular
-nouns, but with a colon (':') as separator.
+* * *
+<small>This (part of) documentation was generated from [../src/fst/affixes/verbs.lexc](http://github.com/giellalt/lang-nds/blob/main/../src/fst/affixes/verbs.lexc)</small>Pronouns
+No pronouns so far.
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/pronouns.lexc](http://github.com/giellalt/lang-nds/blob/main/../src/fst/stems/pronouns.lexc)</small>Prefixes
+No prefixes so far
 
 
 
-Adjective inflection
-The Low German language adjectives compare.
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/prefixes.lexc](http://github.com/giellalt/lang-nds/blob/main/../src/fst/stems/prefixes.lexc)</small>Nouns
+No nouns so far
 
 
-
-
-
-Noun inflection
-The Low German language nouns inflect in cases.
-
-
-
-
-
-
-# Symbol affixes
-
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/nouns.lexc](http://github.com/giellalt/lang-nds/blob/main/../src/fst/stems/nouns.lexc)</small>Adjectives
+No adjectives so far
 
 
 
 
-================================================== !
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/adjectives.lexc](http://github.com/giellalt/lang-nds/blob/main/../src/fst/stems/adjectives.lexc)</small>Verbs
+So far only a couple of verbs
+
+
+
+
+
+
+
+
+Strong verbs 
+
+Class I
+
+
+Class II 
+
+
+
+Class III
+
+
+
+
+
+
+
+Class IV
+
+
+
+Class V
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/verbs.lexc](http://github.com/giellalt/lang-nds/blob/main/../src/fst/stems/verbs.lexc)</small>Numerals
+No numerals so far
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/numerals.lexc](http://github.com/giellalt/lang-nds/blob/main/../src/fst/stems/numerals.lexc)</small>================================================== !
 The Low German morphophonological/twolc rules file 
 ================================================== !
 
@@ -1188,188 +1382,8 @@ spreaken+V+PrfPrt: **hupmat/puhua/speak**
 
 * ★*spr%{eio%}%{aØo%}k%^ABL3%>en* (is not standard language)
 * ★*spro%{aØo%}k0%>en* (is not standard language)
-Verbs
-So far only a couple of verbs
-
-
-
-
-
-
-
-
-Strong verbs 
-
-Class I
-
-
-Class II 
-
-
-
-Class III
-
-
-
-
-
-
-
-Class IV
-
-
-
-Class V
-
-
-
-
-Pronouns
-No pronouns so far.
-
-
-Numerals
-No numerals so far
-
-
-Adjectives
-No adjectives so far
-
-
-
-
-Prefixes
-No prefixes so far
-
-
-
-Nouns
-No nouns so far
-
-
-
-INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Low German LANGUAGE.
-
-
- # Definitions for Multichar_Symbols
- * %{åöä%}
- * %{Øäö%}
- * %{aö%}
- * %{Øä%}
-
-strong verb class 1 1st part
-strong verb class 1 2nd part
-strong verb class 2a 1st part
-strong verb class 2a 2nd part
-strong verb class 2b 1st part
-strong verb class 2b 2nd part
-strong verb class 3a 
-strong verb class 3bc
-strong verb class 4a 1st part
-strong verb class 4ab 2nd part
-strong verb class 4b 1st part
-strong verb class 4c 1st part
-strong verb class 4c 2nd part 
-strong verb class 5a 1st part 
-strong verb class 5ab 2nd part
-strong verb class 5b 1st part
-
-
-TRIGGERS
-
- * %^CC2C  for Deleting second consonant in orthographic geminate
- * %^VV2V  for Orthographic vowel deletion in open syllable
- * %^IUML  for i-umlaut
- * %^UUML  for u-umlaut
- * %^ABL1NL  for non-lengthened ablaut grade 1 in class 4 and 5 in some southern dialects, ABL1 = ablaut grade 1, NL = non-lengthened
- * %^ABL1S  for shortened ablaut grade 1 in 2nd and 3rd sg. of present tense, S = shortened
- * %^ABL2  for ablaut grade 2 in preterite, ABL2 = ablaut grade 2
- * %^ABL2W  for specific preterite forms in Westphalian dialects, W = Westphalian
- * %^ABL2U  for irregular umlaut of ablaut grade 2 in class 4a,b and 5, U = (irregular) umlaut
- * %^ABL3  for long ablaut grade 3 in perfect participle
- * %^ABL3NL  for short ablaut grade 3 in some southern dialects, NL = non-lengthened 
-
-
-## Analysis symbols
-The morphological analyses of wordforms for the Low German
-language are presented in this system in terms of the following symbols.
-(It is highly suggested to follow existing standards when adding new tags).
-
-The parts-of-speech are:
-
-The parts of speech are further split up into:
-
-The Usage extents are marked using following tags:
-
-The nominals are inflected in the following Case and Number
-
-The possession is marked as such:
-The comparative forms are:
-Numerals are classified under:
-Verb moods are:
-Verb personal forms are:
-Other verb forms are
-
- * +Symbol = independent symbols in the text stream, like £, €, ©
-Special symbols are classified with:
-The verbs are syntactically split according to transitivity:
-Special multiword units are analysed with:
-Non-dictionary words can be recognised with:
-
-Question and Focus particles:
-
-
-Semantics are classified with
-
-
-Derivations are classified under the morphophonetic form of the suffix, the
-source and target part-of-speech.
-
-
-Morphophonology
-To represent phonologic variations in word forms we use the following
-symbols in the lexicon files:
-
-And following triggers to control variation
-
-## Flag diacritics
-We have manually optimised the structure of our lexicon using following
-flag diacritics to restrict morhpological combinatorics - only allow compounds
-with verbs if the verb is further derived into a noun again:
- |  @P.NeedNoun.ON@ | (Dis)allow compounds with verbs unless nominalised
- |  @D.NeedNoun.ON@ | (Dis)allow compounds with verbs unless nominalised
- |  @C.NeedNoun@ | (Dis)allow compounds with verbs unless nominalised
-
-For languages that allow compounding, the following flag diacritics are needed
-to control position-based compounding restrictions for nominals. Their use is
-handled automatically if combined with +CmpN/xxx tags. If not used, they will
-do no harm.
- |  @P.CmpFrst.FALSE@ | Require that words tagged as such only appear first
- |  @D.CmpPref.TRUE@ | Block such words from entering ENDLEX
- |  @P.CmpPref.FALSE@ | Block these words from making further compounds
- |  @D.CmpLast.TRUE@ | Block such words from entering R
- |  @D.CmpNone.TRUE@ | Combines with the next tag to prohibit compounding
- |  @U.CmpNone.FALSE@ | Combines with the prev tag to prohibit compounding
- |  @P.CmpOnly.TRUE@ | Sets a flag to indicate that the word has passed R
- |  @D.CmpOnly.FALSE@ | Disallow words coming directly from root.
-
-Use the following flag diacritics to control downcasing of derived proper
-nouns (e.g. Finnish Pariisi -> pariisilainen). See e.g. North Sámi for how to use
-these flags. There exists a ready-made regex that will do the actual down-casing
-given the proper use of these flags.
- |  @U.Cap.Obl@ | Allowing downcasing of derived names: deatnulasj.
- |  @U.Cap.Opt@ | Allowing downcasing of derived names: deatnulasj.
-
-The word forms in Low German language start from the lexeme roots of basic
-word classes, or optionally from prefixes:
-
-
-
-
-
-
-
-
+* * *
+<small>This (part of) documentation was generated from [../src/fst/phonology.twolc](http://github.com/giellalt/lang-nds/blob/main/../src/fst/phonology.twolc)</small>
 
 
 
@@ -1423,7 +1437,8 @@ word classes, or optionally from prefixes:
 % sárggis% :%-   Root ; 
 % násti% :%*     Root ; 
 
-
+* * *
+<small>This (part of) documentation was generated from [../src/transcriptions/transcriptor-numbers-digit2text.lexc](http://github.com/giellalt/lang-nds/blob/main/../src/transcriptions/transcriptor-numbers-digit2text.lexc)</small>
 
 
 We describe here how abbreviations are in Low German are read out, e.g.
@@ -1439,8 +1454,9 @@ For example:
  * esim.:esimerkiksi # ; 
 
 
-
-      [ L A N G U A G E ]  G R A M M A R   C H E C K E R
+* * *
+<small>This (part of) documentation was generated from [../src/transcriptions/transcriptor-abbrevs2text.lexc](http://github.com/giellalt/lang-nds/blob/main/../src/transcriptions/transcriptor-abbrevs2text.lexc)</small>
+[ L A N G U A G E ]  G R A M M A R   C H E C K E R
 
 
 
@@ -1850,3 +1866,5 @@ expression **WORD - premodifiers**.
 
 
 
+* * *
+<small>This (part of) documentation was generated from [../tools/grammarcheckers/grammarchecker.cg3](http://github.com/giellalt/lang-nds/blob/main/../tools/grammarcheckers/grammarchecker.cg3)</small>

@@ -2,7 +2,7 @@ Verb inflection
 The LOW SAXON language verbs inflect in persons. So far only for northwestern dialects.
 
 tellen:tell
- Orthographic variation in consonant length
+Orthographic variation in consonant length
 
 
 
@@ -40,7 +40,7 @@ No orthographic variation in marking of long vowels or consonants, perfect parti
 
 
 sakken:sakk
- Orthographic variation in consonant length, perfect participle '-ed'
+Orthographic variation in consonant length, perfect participle '-ed'
 
 
 
@@ -98,3 +98,5 @@ Strong verb class 5
 
 
 
+* * *
+<small>This (part of) documentation was generated from [../src/fst/affixes/verbs.lexc](http://github.com/giellalt/lang-nds/blob/main/../src/fst/affixes/verbs.lexc)</small>

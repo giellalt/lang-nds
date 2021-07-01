@@ -454,3 +454,5 @@ spreaken+V+PrfPrt: **hupmat/puhua/speak**
 
 * ★*spr%{eio%}%{aØo%}k%^ABL3%>en* (is not standard language)
 * ★*spro%{aØo%}k0%>en* (is not standard language)
+* * *
+<small>This (part of) documentation was generated from [../src/fst/phonology.twolc](http://github.com/giellalt/lang-nds/blob/main/../src/fst/phonology.twolc)</small>
