@@ -606,7 +606,72 @@ These were the set types.
 
 
 * * *
-<small>This (part of) documentation was generated from [../src/cg3/functions.cg3](http://github.com/giellalt/lang-nds/blob/main/../src/cg3/functions.cg3)</small>================================================== !
+<small>This (part of) documentation was generated from [../src/cg3/functions.cg3](http://github.com/giellalt/lang-nds/blob/main/../src/cg3/functions.cg3)</small>Nouns
+No nouns so far
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/nouns.lexc](http://github.com/giellalt/lang-nds/blob/main/../src/fst/stems/nouns.lexc)</small>Prefixes
+No prefixes so far
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/prefixes.lexc](http://github.com/giellalt/lang-nds/blob/main/../src/fst/stems/prefixes.lexc)</small>Adjectives
+No adjectives so far
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/adjectives.lexc](http://github.com/giellalt/lang-nds/blob/main/../src/fst/stems/adjectives.lexc)</small>Verbs
+So far only a couple of verbs
+
+
+
+
+
+
+
+
+Strong verbs 
+
+Class I
+
+
+Class II 
+
+
+
+Class III
+
+
+
+
+
+
+
+Class IV
+
+
+
+Class V
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/verbs.lexc](http://github.com/giellalt/lang-nds/blob/main/../src/fst/stems/verbs.lexc)</small>Numerals
+No numerals so far
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/numerals.lexc](http://github.com/giellalt/lang-nds/blob/main/../src/fst/stems/numerals.lexc)</small>Pronouns
+No pronouns so far.
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/pronouns.lexc](http://github.com/giellalt/lang-nds/blob/main/../src/fst/stems/pronouns.lexc)</small>================================================== !
 The Low German morphophonological/twolc rules file 
 ================================================== !
 
@@ -1071,14 +1136,23 @@ The Low German language nouns inflect in cases.
 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/nouns.lexc](http://github.com/giellalt/lang-nds/blob/main/../src/fst/affixes/nouns.lexc)</small>Proper noun inflection
-The Low German language proper nouns inflect in the same cases as regular
-nouns, but with a colon (':') as separator.
+<small>This (part of) documentation was generated from [../src/fst/affixes/nouns.lexc](http://github.com/giellalt/lang-nds/blob/main/../src/fst/affixes/nouns.lexc)</small>
+# Symbol affixes
+
+
 
 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/propernouns.lexc](http://github.com/giellalt/lang-nds/blob/main/../src/fst/affixes/propernouns.lexc)</small>Verb inflection
+<small>This (part of) documentation was generated from [../src/fst/affixes/symbols.lexc](http://github.com/giellalt/lang-nds/blob/main/../src/fst/affixes/symbols.lexc)</small>Adjective inflection
+The Low German language adjectives compare.
+
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/affixes/adjectives.lexc](http://github.com/giellalt/lang-nds/blob/main/../src/fst/affixes/adjectives.lexc)</small>Verb inflection
 The LOW SAXON language verbs inflect in persons. So far only for northwestern dialects.
 
 tellen:tell
@@ -1179,23 +1253,14 @@ Strong verb class 5
 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/verbs.lexc](http://github.com/giellalt/lang-nds/blob/main/../src/fst/affixes/verbs.lexc)</small>Adjective inflection
-The Low German language adjectives compare.
-
-
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/adjectives.lexc](http://github.com/giellalt/lang-nds/blob/main/../src/fst/affixes/adjectives.lexc)</small>
-# Symbol affixes
-
-
+<small>This (part of) documentation was generated from [../src/fst/affixes/verbs.lexc](http://github.com/giellalt/lang-nds/blob/main/../src/fst/affixes/verbs.lexc)</small>Proper noun inflection
+The Low German language proper nouns inflect in the same cases as regular
+nouns, but with a colon (':') as separator.
 
 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/symbols.lexc](http://github.com/giellalt/lang-nds/blob/main/../src/fst/affixes/symbols.lexc)</small>
+<small>This (part of) documentation was generated from [../src/fst/affixes/propernouns.lexc](http://github.com/giellalt/lang-nds/blob/main/../src/fst/affixes/propernouns.lexc)</small>
 INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Low German LANGUAGE.
 
 
@@ -1318,72 +1383,24 @@ word classes, or optionally from prefixes:
 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/root.lexc](http://github.com/giellalt/lang-nds/blob/main/../src/fst/root.lexc)</small>Nouns
-No nouns so far
+<small>This (part of) documentation was generated from [../src/fst/root.lexc](http://github.com/giellalt/lang-nds/blob/main/../src/fst/root.lexc)</small>
+
+
+We describe here how abbreviations are in Low German are read out, e.g.
+for text-to-speech systems.
+
+For example:
+
+ * s.:syntynyt # ;  
+ * os.:omaa% sukua # ;  
+ * v.:vuosi # ;  
+ * v.:vuonna # ;  
+ * esim.:esimerkki # ; 
+ * esim.:esimerkiksi # ; 
 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/nouns.lexc](http://github.com/giellalt/lang-nds/blob/main/../src/fst/stems/nouns.lexc)</small>Verbs
-So far only a couple of verbs
-
-
-
-
-
-
-
-
-Strong verbs 
-
-Class I
-
-
-Class II 
-
-
-
-Class III
-
-
-
-
-
-
-
-Class IV
-
-
-
-Class V
-
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/verbs.lexc](http://github.com/giellalt/lang-nds/blob/main/../src/fst/stems/verbs.lexc)</small>Adjectives
-No adjectives so far
-
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/adjectives.lexc](http://github.com/giellalt/lang-nds/blob/main/../src/fst/stems/adjectives.lexc)</small>Numerals
-No numerals so far
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/numerals.lexc](http://github.com/giellalt/lang-nds/blob/main/../src/fst/stems/numerals.lexc)</small>Prefixes
-No prefixes so far
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/prefixes.lexc](http://github.com/giellalt/lang-nds/blob/main/../src/fst/stems/prefixes.lexc)</small>Pronouns
-No pronouns so far.
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/pronouns.lexc](http://github.com/giellalt/lang-nds/blob/main/../src/fst/stems/pronouns.lexc)</small>
+<small>This (part of) documentation was generated from [../src/transcriptions/transcriptor-abbrevs2text.lexc](http://github.com/giellalt/lang-nds/blob/main/../src/transcriptions/transcriptor-abbrevs2text.lexc)</small>
 
 
 
@@ -1439,23 +1456,6 @@ No pronouns so far.
 
 * * *
 <small>This (part of) documentation was generated from [../src/transcriptions/transcriptor-numbers-digit2text.lexc](http://github.com/giellalt/lang-nds/blob/main/../src/transcriptions/transcriptor-numbers-digit2text.lexc)</small>
-
-
-We describe here how abbreviations are in Low German are read out, e.g.
-for text-to-speech systems.
-
-For example:
-
- * s.:syntynyt # ;  
- * os.:omaa% sukua # ;  
- * v.:vuosi # ;  
- * v.:vuonna # ;  
- * esim.:esimerkki # ; 
- * esim.:esimerkiksi # ; 
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/transcriptions/transcriptor-abbrevs2text.lexc](http://github.com/giellalt/lang-nds/blob/main/../src/transcriptions/transcriptor-abbrevs2text.lexc)</small>
 [ L A N G U A G E ]  G R A M M A R   C H E C K E R
 
 
