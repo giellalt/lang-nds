@@ -1063,149 +1063,35 @@ spreaken+V+PrfPrt: **hupmat/puhua/speak**
 * ★*spr%{eio%}%{aØo%}k%^ABL3%>en* (is not standard language)
 * ★*spro%{aØo%}k0%>en* (is not standard language)
 * * *
-<small>This (part of) documentation was generated from [../src/fst/phonology.twolc](http://github.com/giellalt/lang-nds/blob/main/../src/fst/phonology.twolc)</small>Verb inflection
-The LOW SAXON language verbs inflect in persons. So far only for northwestern dialects.
-
-tellen:tell
-Orthographic variation in consonant length
-
-
-
-
-maken:maak
-Orthographic variation in marking of long vowels, perfect participle '-ed'
-
-
-
-
-
-
-völen:vööl
-Orthographic variation in marking of long vowels, perfect participle '-d'
-
-
-
-
-
-
-koaken:koak
-No orthographic variation in marking of long vowels or consonants, perfect participle '-ed'
-
-
-
-
-
-
-waien:wai
-No orthographic variation in marking of long vowels or consonants, perfect participle '-d'
-
-
-
-
-
-
-sakken:sakk
-Orthographic variation in consonant length, perfect participle '-ed'
-
-
-
-
-
-
-ryden:r%{ei0%}%{ya0%}d
-Strong verb class 1, 4c
-
-
-
-
-
-
-beden:b%{eouü%}%{0eua%}d
-Strong verb class 2
-
-
-
-
-
-
-drinken:dr%{iua%}nk
-Strong verb class 3
-
-
-
-
-
-winnen:w%{iua%}nn
-Strong verb class 3, stem ending with two identical consonants
-
-
-
-
-
-
-niamen:n%{iaeo%}%{ae0%}m
-Strong verb class 4a,b
-
-
-
-
-
-
-steaken:st%{eia%}%{ae0%}k
-Strong verb class 5
-
-
-
-
-
-
-
-
+<small>This (part of) documentation was generated from [../src/fst/phonology.twolc](http://github.com/giellalt/lang-nds/blob/main/../src/fst/phonology.twolc)</small>Nouns
+No nouns so far
 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/verbs.lexc](http://github.com/giellalt/lang-nds/blob/main/../src/fst/affixes/verbs.lexc)</small>Proper noun inflection
-The Low German language proper nouns inflect in the same cases as regular
-nouns, but with a colon (':') as separator.
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/propernouns.lexc](http://github.com/giellalt/lang-nds/blob/main/../src/fst/affixes/propernouns.lexc)</small>Noun inflection
-The Low German language nouns inflect in cases.
-
-
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/nouns.lexc](http://github.com/giellalt/lang-nds/blob/main/../src/fst/affixes/nouns.lexc)</small>
-# Symbol affixes
-
-
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/symbols.lexc](http://github.com/giellalt/lang-nds/blob/main/../src/fst/affixes/symbols.lexc)</small>Adjective inflection
-The Low German language adjectives compare.
-
-
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/adjectives.lexc](http://github.com/giellalt/lang-nds/blob/main/../src/fst/affixes/adjectives.lexc)</small>Pronouns
-No pronouns so far.
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/pronouns.lexc](http://github.com/giellalt/lang-nds/blob/main/../src/fst/stems/pronouns.lexc)</small>Numerals
+<small>This (part of) documentation was generated from [../src/fst/stems/nouns.lexc](http://github.com/giellalt/lang-nds/blob/main/../src/fst/stems/nouns.lexc)</small>Numerals
 No numerals so far
 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/numerals.lexc](http://github.com/giellalt/lang-nds/blob/main/../src/fst/stems/numerals.lexc)</small>Verbs
+<small>This (part of) documentation was generated from [../src/fst/stems/numerals.lexc](http://github.com/giellalt/lang-nds/blob/main/../src/fst/stems/numerals.lexc)</small>Adjectives
+No adjectives so far
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/adjectives.lexc](http://github.com/giellalt/lang-nds/blob/main/../src/fst/stems/adjectives.lexc)</small>Prefixes
+No prefixes so far
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/prefixes.lexc](http://github.com/giellalt/lang-nds/blob/main/../src/fst/stems/prefixes.lexc)</small>Pronouns
+No pronouns so far.
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/pronouns.lexc](http://github.com/giellalt/lang-nds/blob/main/../src/fst/stems/pronouns.lexc)</small>Verbs
 So far only a couple of verbs
 
 
@@ -1242,25 +1128,7 @@ Class V
 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/verbs.lexc](http://github.com/giellalt/lang-nds/blob/main/../src/fst/stems/verbs.lexc)</small>Prefixes
-No prefixes so far
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/prefixes.lexc](http://github.com/giellalt/lang-nds/blob/main/../src/fst/stems/prefixes.lexc)</small>Nouns
-No nouns so far
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/nouns.lexc](http://github.com/giellalt/lang-nds/blob/main/../src/fst/stems/nouns.lexc)</small>Adjectives
-No adjectives so far
-
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/adjectives.lexc](http://github.com/giellalt/lang-nds/blob/main/../src/fst/stems/adjectives.lexc)</small>
+<small>This (part of) documentation was generated from [../src/fst/stems/verbs.lexc](http://github.com/giellalt/lang-nds/blob/main/../src/fst/stems/verbs.lexc)</small>
 INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Low German LANGUAGE.
 
 
@@ -1384,6 +1252,138 @@ word classes, or optionally from prefixes:
 
 * * *
 <small>This (part of) documentation was generated from [../src/fst/root.lexc](http://github.com/giellalt/lang-nds/blob/main/../src/fst/root.lexc)</small>
+# Symbol affixes
+
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/affixes/symbols.lexc](http://github.com/giellalt/lang-nds/blob/main/../src/fst/affixes/symbols.lexc)</small>Noun inflection
+The Low German language nouns inflect in cases.
+
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/affixes/nouns.lexc](http://github.com/giellalt/lang-nds/blob/main/../src/fst/affixes/nouns.lexc)</small>Adjective inflection
+The Low German language adjectives compare.
+
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/affixes/adjectives.lexc](http://github.com/giellalt/lang-nds/blob/main/../src/fst/affixes/adjectives.lexc)</small>Verb inflection
+The LOW SAXON language verbs inflect in persons. So far only for northwestern dialects.
+
+tellen:tell
+Orthographic variation in consonant length
+
+
+
+
+maken:maak
+Orthographic variation in marking of long vowels, perfect participle '-ed'
+
+
+
+
+
+
+völen:vööl
+Orthographic variation in marking of long vowels, perfect participle '-d'
+
+
+
+
+
+
+koaken:koak
+No orthographic variation in marking of long vowels or consonants, perfect participle '-ed'
+
+
+
+
+
+
+waien:wai
+No orthographic variation in marking of long vowels or consonants, perfect participle '-d'
+
+
+
+
+
+
+sakken:sakk
+Orthographic variation in consonant length, perfect participle '-ed'
+
+
+
+
+
+
+ryden:r%{ei0%}%{ya0%}d
+Strong verb class 1, 4c
+
+
+
+
+
+
+beden:b%{eouü%}%{0eua%}d
+Strong verb class 2
+
+
+
+
+
+
+drinken:dr%{iua%}nk
+Strong verb class 3
+
+
+
+
+
+winnen:w%{iua%}nn
+Strong verb class 3, stem ending with two identical consonants
+
+
+
+
+
+
+niamen:n%{iaeo%}%{ae0%}m
+Strong verb class 4a,b
+
+
+
+
+
+
+steaken:st%{eia%}%{ae0%}k
+Strong verb class 5
+
+
+
+
+
+
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/affixes/verbs.lexc](http://github.com/giellalt/lang-nds/blob/main/../src/fst/affixes/verbs.lexc)</small>Proper noun inflection
+The Low German language proper nouns inflect in the same cases as regular
+nouns, but with a colon (':') as separator.
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/affixes/propernouns.lexc](http://github.com/giellalt/lang-nds/blob/main/../src/fst/affixes/propernouns.lexc)</small>
 
 
 We describe here how abbreviations are in Low German are read out, e.g.
