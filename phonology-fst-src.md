@@ -26,16 +26,16 @@ strong verb class 5b 1st part
 
 
 TRIGGERS
-* %^CC2C:0geminate  for Deleting second consonant in orthographic geminate
-* %^VV2V:0syllable  for Orthographic vowel deletion in open syllable
-* %^IUML:0i-umlaut  for i-umlaut
-* %^UUML:0u-umlaut  for u-umlaut
-* %^ABL1NL:0non-lengthened  for non-lengthened ablaut grade 1 in class 4 and 5 in some southern dialects, ABL1 = ablaut grade 1, NL = non-lengthened
-* %^ABL1S:0shortened  for shortened ablaut grade 1 in 2nd and 3rd sg. of present tense, S = shortened
-* %^ABL2:02  for ablaut grade 2 in preterite, ABL2 = ablaut grade 2
-* %^ABL2W:0Westphalian  for specific preterite forms in Westphalian dialects, W = Westphalian
-* %^ABL2U:0umlaut  for irregular umlaut of ablaut grade 2 in class 4a,b and 5, U = (irregular) umlaut
-* %^ABL3:0participle  for long ablaut grade 3 in perfect participle
+* %^CC2C:0  for Deleting second consonant in orthographic geminate
+* %^VV2V:0  for Orthographic vowel deletion in open syllable
+* %^IUML:0  for i-umlaut
+* %^UUML:0  for u-umlaut
+* %^ABL1NL:0  for non-lengthened ablaut grade 1 in class 4 and 5 in some southern dialects, ABL1 = ablaut grade 1, NL = non-lengthened
+* %^ABL1S:0  for shortened ablaut grade 1 in 2nd and 3rd sg. of present tense, S = shortened
+* %^ABL2:0  for ablaut grade 2 in preterite, ABL2 = ablaut grade 2
+* %^ABL2W:0  for specific preterite forms in Westphalian dialects, W = Westphalian
+* %^ABL2U:0  for irregular umlaut of ablaut grade 2 in class 4a,b and 5, U = (irregular) umlaut
+* %^ABL3:0  for long ablaut grade 3 in perfect participle
 * %^ABL3NL:0  for short ablaut grade 3 in some southern dialects, NL = non-lengthened 
 
 
