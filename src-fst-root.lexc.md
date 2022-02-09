@@ -1,7 +1,6 @@
 
 INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Low German LANGUAGE.
 
-
 # Definitions for Multichar_Symbols
 * %{åöä%}
 * %{Øäö%}
@@ -25,7 +24,6 @@ strong verb class 5a 1st part
 strong verb class 5ab 2nd part
 strong verb class 5b 1st part
 
-
 TRIGGERS
 
 * %^CC2C  for Deleting second consonant in orthographic geminate
@@ -39,7 +37,6 @@ TRIGGERS
 * %^ABL2U  for irregular umlaut of ablaut grade 2 in class 4a,b and 5, U = (irregular) umlaut
 * %^ABL3  for long ablaut grade 3 in perfect participle
 * %^ABL3NL  for short ablaut grade 3 in some southern dialects, NL = non-lengthened 
-
 
 ## Analysis symbols
 The morphological analyses of wordforms for the Low German
@@ -69,13 +66,10 @@ Non-dictionary words can be recognised with:
 
 Question and Focus particles:
 
-
 Semantics are classified with
-
 
 Derivations are classified under the morphophonetic form of the suffix, the
 source and target part-of-speech.
-
 
 Morphophonology
 To represent phonologic variations in word forms we use the following
@@ -114,11 +108,9 @@ given the proper use of these flags.
 The word forms in Low German language start from the lexeme roots of basic
 word classes, or optionally from prefixes:
 
-
-
-
-
-
-
 * * *
-<small>This (part of) documentation was generated from [../src/fst/root.lexc](http://github.com/giellalt/lang-nds/blob/main/../src/fst/root.lexc)</small>
+
+<small>This (part of) documentation was generated from [src/fst/root.lexc](https://github.com/giellalt/lang-nds/blob/main/src/fst/root.lexc)</small>
+
+---
+

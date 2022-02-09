@@ -4,9 +4,6 @@ The Low German morphophonological/twolc rules file
 
 This file documents the [phonology.twolc file](http://github.com/giellalt/lang-nds/blob/main/src/fst/phonology.twolc) 
 
-
-
-
 strong verb class 1 1st part
 strong verb class 1 2nd part
 strong verb class 2a 1st part
@@ -24,7 +21,6 @@ strong verb class 5a 1st part
 strong verb class 5ab 2nd part
 strong verb class 5b 1st part
 
-
 TRIGGERS
 * %^CC2C:0  for Deleting second consonant in orthographic geminate
 * %^VV2V:0  for Orthographic vowel deletion in open syllable
@@ -38,11 +34,6 @@ TRIGGERS
 * %^ABL3:0  for long ablaut grade 3 in perfect participle
 * %^ABL3NL:0  for short ablaut grade 3 in some southern dialects, NL = non-lengthened 
 
-
-
-
-
-
 **Deleting s before suffix -st**
 
 * *leas%>st*
@@ -51,8 +42,6 @@ TRIGGERS
 * ★*leas%>st* (is not standard language)
 * ★*leas%>st* (is not standard language)
 
-
-
 **Deleting t before suffix -t**
 
 * *acht%>t*
@@ -60,7 +49,6 @@ TRIGGERS
 
 * ★*acht%>t* (is not standard language)
 * ★*acht%>t* (is not standard language)
-
 
 **Orthographic vowel deletion in open syllable**
 
@@ -79,7 +67,6 @@ tellen+V+PrfPrc
 
 * ★*tell%^CC2C>d* (is not standard language)
 * ★*tell0%>d* (is not standard language)
-
 
 **I-umlaut for short vowels in closed syllable or long vowels in open syllable** 
 
@@ -111,9 +98,7 @@ vuust+N+Pl+Nom: **čorbma/nyrkki/fist**
 * ★*vuust%^IUML%>e* (is not standard language)
 * ★*vuust0%>e* (is not standard language)
 
-
 **I-umlaut for å ** 
-
 
 **Double marking of i-umlaut for å** 
 
@@ -126,7 +111,6 @@ råd+N+Pl+Nom: **ráđđi/neuvo/council**
 
 * ★*r%{åöä%}%{0äö%}d%^IUML%>e* (is not standard language)
 * ★*r%{åöä%}%{0äö%}d0%>e* (is not standard language)
-
 
 daal+N+Pl+Nom: **leahki/laakso/valley**
 * *daal%^VV2V%^IUML%>er*
@@ -185,8 +169,6 @@ broak+N+Pl+Nom: **doadjin/katkaisu/break**
 * ★*broak%^IUML%>e* (is not standard language)
 * ★*bröak0%>e* (is not standard language)
 
-
-
 **Double marking of umlaut for graphemes consisting of two different letters, ending in u:y**
 
 **Double marking of umlaut for graphemes consisting of two different letters, ending in u:ü**
@@ -196,8 +178,6 @@ busk+N+Pl+Nom: **miestta/pensas/bush**
 
 * ★*busk%^IUML%>e* (is not standard language)
 * ★*busk0%>e* (is not standard language)
-
-
 
 **Short ablaut grade 1 in class 1  %{eiØ%}:i**
 
@@ -252,7 +232,6 @@ spreaken+V+Ind+Prs+Sg3: **hupmat/puhua/speak**
 * *spri0k0%>t*
 
 **Short ablaut grade 1 in class 5a %{iae%}:i**
-
 
 giaven+V+Ind+Prs+Sg3: **addit/antaa/give**
 * *g%{iae%}%{aeØ%}v%^ABL1S%>t*
@@ -357,7 +336,6 @@ dreapen+V+Ind+Prt+Sg3: **deaivvadit/tavata/meet**
 * *dr%{eiao%}%{aeØ%}p%^ABL2U*
 * *draep0*
 
-
 **Ablaut grade 2 and 3 in class 4c**
 **Second part of ablaut grade 2 in class 4c**
 
@@ -416,7 +394,6 @@ krupen+V+PrfPrc: **čákŋat/ryömiä/creep**
 * ★*kr%{uüo%}%{uaØ%}p%^ABL2* (is not standard language)
 * ★*kro%{uaØ%}p0* (is not standard language)
 
-
 **Ablaut grade 3 in class 4a+b**
 
 **Second part of ablaut grade 3 in class 4a**
@@ -454,5 +431,10 @@ spreaken+V+PrfPrt: **hupmat/puhua/speak**
 
 * ★*spr%{eio%}%{aØo%}k%^ABL3%>en* (is not standard language)
 * ★*spro%{aØo%}k0%>en* (is not standard language)
+
 * * *
-<small>This (part of) documentation was generated from [../src/fst/phonology.twolc](http://github.com/giellalt/lang-nds/blob/main/../src/fst/phonology.twolc)</small>
+
+<small>This (part of) documentation was generated from [src/fst/phonology.twolc](https://github.com/giellalt/lang-nds/blob/main/src/fst/phonology.twolc)</small>
+
+---
+
