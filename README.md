@@ -2,7 +2,7 @@ The Low German morphology and tools
 ==========================================
 
 [![GitHub issues](https://img.shields.io/github/issues-raw/giellalt/lang-nds)](https://github.com/giellalt/lang-nds/issues)
-[![Build Status](https://github.com/giellalt/lang-nds/workflows/Speller%20CI+CD/badge.svg)](https://github.com/giellalt/lang-nds/actions)
+[![Build Status](https://divvun-tc.thetc.se/api/github/v1/repository/giellalt/lang-nds/main/badge.svg)](https://github.com/giellalt/lang-nds/actions)
 [![License](https://img.shields.io/github/license/giellalt/lang-nds)](https://github.com/giellalt/lang-nds/blob/main/LICENSE)
 
 This repository contains finite state source files for the Low German language,
