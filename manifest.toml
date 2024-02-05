@@ -1,5 +1,5 @@
-name = "Low German"
-version = "0.1.1"
+spellername = "Low German"
+spellerversion = "0.1.1"
 
 # Name of the speller package in various languages.
 # The default is English + autonym:
