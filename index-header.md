@@ -4,7 +4,8 @@
 ![Lemma count](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgiellalt%2Flang-nds%2Fgh-pages%2Flemmacount.json)
 [![License](https://img.shields.io/github/license/giellalt/lang-nds)](https://github.com/giellalt/lang-nds/blob/main/LICENSE)
 [![Issues](https://img.shields.io/github/issues/giellalt/lang-nds)](https://github.com/giellalt/lang-nds/issues)
-[![Build Status](https://divvun-tc.giellalt.org/api/github/v1/repository/giellalt/lang-nds/main/badge.svg)](https://github.com/giellalt/lang-nds/actions)
+[![Build Status](https://builds.giellalt.org/api/badge/lang-nds?label=CI)](https://builds.giellalt.org/pipelines/lang-nds/builds/latest)
+[![Glottolog](https://img.shields.io/badge/Glottolog-green)](https://glottolog.org/resource/languoid/id/nort2627)
 
 This page documents the work on the **Low German language model**. 
 
