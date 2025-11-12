@@ -1,6 +1,3 @@
-spellername = "Low German"
-spellerversion = "0.1.1"
-
 # Name of the speller package in various languages.
 # The default is English + autonym:
 [speller.name]
@@ -22,3 +19,15 @@ legacy_product_codes = [
     { value = "4F7A6FD0-7CEB-4F7B-BE45-BFA8518559EC", kind = "nsis" },
     { value = "7D368711-3A40-4DCB-B6FD-BA93555BFE0F", kind = "nsis" }
 ]
+
+[package.speller]
+name = "Low German"
+version = "0.1.1"
+
+[package.grammar]
+name = "Low German"
+version = "0.1.0"
+
+[package.tts-text-proc]
+name = "Low German"
+version = "0.1.0"
